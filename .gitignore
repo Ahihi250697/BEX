@@ -1,2 +1,6 @@
 node_modules
 app
+*.scss
+package-lock.json
+package.json
+gulpfile.js
