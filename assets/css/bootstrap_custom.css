@@ -250,18 +250,24 @@ template {
 
 .container {
     width: 100%;
-    max-width: 1160px;
-    padding: 0 20px;
+    max-width: 1000px;
     margin-right: auto;
     margin-left: auto;
 }
 
-/*
+.container-low {
+    width: 100%;
+    max-width: 1160px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 @media (max-width: 1024px) {
-    .container {
-       padding: 0 20px;
+    .container,
+    .container-low {
+        padding: 0 20px;
     }
-}*/
+}
 
 .container-fluid {
     width: 100%;

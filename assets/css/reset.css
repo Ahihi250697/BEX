@@ -125,6 +125,11 @@ section {
     display: block;
 }
 
+figure img {
+    width: 100%;
+    ;
+}
+
 nav ul {
     list-style: none;
 }
