@@ -1,13 +1,6 @@
 body {
   line-height: 1.4; }
 
-h3.title-info span {
-  font-size: 3.8rem;
-  font-weight: bold;
-  display: block; }
-  h3.title-info span:first-letter {
-    color: #008fd4; }
-
 .p-60 {
   padding: 60px 20px; }
 
@@ -122,6 +115,14 @@ h4.title {
   .dispatch-business .img img {
     margin: auto;
     max-width: 100%; }
+  .dispatch-business .chart-content {
+    max-width: 568px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between; }
+    .dispatch-business .chart-content .chart-div {
+      width: 50%; }
 
 .action-plan {
   margin: 8rem 0; }
@@ -153,8 +154,6 @@ h4.title {
   max-width: 100%; }
 
 @media screen and (max-width: 576px) {
-  h3.title span {
-    font-size: 2.8rem; }
   .company-profile .company-profile-content dl {
     flex-wrap: wrap; }
   .company-profile .company-profile-content dt,

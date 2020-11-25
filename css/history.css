@@ -1,10 +1,3 @@
-h3.title span {
-  font-size: 3.8rem;
-  font-weight: bold;
-  display: block; }
-  h3.title span:first-letter {
-    color: #008fd4; }
-
 .history .history-content {
   position: relative; }
   .history .history-content::before {
@@ -25,7 +18,8 @@ h3.title span {
       .history .history-content dl dt .num {
         font-size: 3.4rem;
         font-weight: bold;
-        line-height: 1; }
+        line-height: 1;
+        font-family: 'Sen', sans-serif; }
         .history .history-content dl dt .num span {
           color: #008fd4; }
     .history .history-content dl dd {

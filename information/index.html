@@ -30,14 +30,15 @@
 
         <!-- #endregion -->
     </header>
-    <main>
+    <main class="main">
         <!-- #region: main -->
         <section class="company-profile">
             <div class="container">
-                <h3 class="title-info">
-                    <span>COMPANY PROFILE</span>
-                    会社概要
+                <h3 class="cm-title">
+                    <span class="title">COMPANY PROFILE</span>
                 </h3>
+                <span class="lead">会社概要</span>
+                <span class="cm-line low"></span>
                 <div class="company-profile-content">
                     <dl>
                         <dt>
@@ -210,6 +211,25 @@
                     <div class="img">
                         <img src="../images/information/img-information-data.svg" alt="">
                     </div>
+                    <!-- <div class="chart-content">
+                        <div class="chart-left chart-div">
+                            <div class="content">
+                                <canvas id="canvas" width="400px" height="400px"></canvas>
+                            </div>
+                            <div class="content">
+                                <ul class="chart-ul">
+                                    <li>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="chart-right chart-div">
+                            <div class="content">
+                                <canvas id="canvas" width="400px" height="400px"></canvas>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -258,6 +278,9 @@
         <!-- #endregion -->
     </footer>
     <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script src="../assets/plugins/chartjs/chart.min.js"></script>
+    <script src="../assets/plugins/chartjs/util.js"></script>
+    <script src="../js/information.js"></script>
 
 </body>
 
