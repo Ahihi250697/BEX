@@ -1,0 +1,41 @@
+h3.title span {
+  font-size: 3.8rem;
+  font-weight: bold;
+  display: block; }
+  h3.title span:first-letter {
+    color: #008fd4; }
+
+.history .history-content dl {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 4.4rem; }
+  .history .history-content dl dt {
+    max-width: 116px;
+    width: 100%; }
+    .history .history-content dl dt .num {
+      font-size: 3.4rem;
+      font-weight: bold;
+      line-height: 1; }
+      .history .history-content dl dt .num span {
+        color: #008fd4; }
+  .history .history-content dl dd {
+    padding-bottom: 4.4rem;
+    margin-left: 4.5rem;
+    width: 100%;
+    border-bottom: 1px dashed #e6e6e6; }
+    .history .history-content dl dd span {
+      display: block;
+      position: relative;
+      line-height: 1.6; }
+      .history .history-content dl dd span:after {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -45px;
+        width: 5px;
+        height: 5px;
+        background-color: #008fd4;
+        content: ""; }
+    .history .history-content dl dd a {
+      display: flex;
+      align-items: center; }
