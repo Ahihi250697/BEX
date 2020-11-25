@@ -263,7 +263,8 @@ template {
 }
 
 @media (max-width: 1024px) {
-    .container {
+    .container,
+    .container-low {
         padding: 0 20px;
     }
 }
