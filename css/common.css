@@ -227,6 +227,7 @@ body > main {
 
 .hero {
   width: 100%;
+  margin-bottom: 11rem;
 }
 .hero figure {
   width: 100%;
@@ -257,6 +258,11 @@ body > main {
   }
   .hero figure figcaption h2 span {
     font-size: 3rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    margin-bottom: 5rem;
   }
 }
 
@@ -572,6 +578,47 @@ body > main {
   .footer-container {
     padding: 0 2rem;
   }
+}
+
+.to-top-button {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #008FD4;
+  border: 2px solid #008FD4;
+  font-family: "Sen", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  position: fixed;
+  z-index: 1000;
+  right: 7rem;
+  bottom: 10rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+.to-top-button.active {
+  visibility: visible;
+}
+.to-top-button::before {
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid #fff;
+  display: block;
+}
+.to-top-button:hover {
+  background-color: #fff;
+  border-color: #008FD4;
+  color: #008FD4;
+}
+.to-top-button:hover::before {
+  border-top-color: #008FDA;
 }
 
 /*# sourceMappingURL=common.css.map */
