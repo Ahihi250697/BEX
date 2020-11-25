@@ -1,2 +1,12 @@
 node_modules
-app
+scss
+sass
+*.scss
+gulpfile.js
+.vscode
+package-lock.json
+*.json
+foundation-emails-template
+foundation-zurb-template
+PostCss
+css/maps

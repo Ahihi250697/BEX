@@ -1,0 +1,142 @@
+.p-60 {
+  padding: 60px 0; }
+
+.bg-soft {
+  background-color: #f4f8fa; }
+
+.three-dots {
+  display: flex;
+  justify-content: center;
+  margin: 150px 0; }
+  .three-dots span {
+    margin: 0 6px;
+    display: block;
+    width: 6px;
+    height: 6px;
+    background-color: black; }
+
+h3.title {
+  text-align: center;
+  max-width: 460px;
+  width: 100%;
+  margin: auto;
+  padding: 1.2rem 0;
+  position: relative; }
+  h3.title:before, h3.title:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: #008fd4;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    content: ""; }
+  h3.title:after {
+    content: "";
+    left: auto;
+    right: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px; }
+
+.plus-icon {
+  position: relative; }
+  .plus-icon .layer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px; }
+    .plus-icon .layer:before {
+      width: 1px;
+      height: 1px;
+      position: absolute;
+      bottom: 7px;
+      left: -7px;
+      content: url("../images/information/icon-plus.svg"); }
+    .plus-icon .layer:after {
+      width: 1px;
+      height: 1px;
+      position: absolute;
+      bottom: 7px;
+      right: 5px;
+      content: url("../images/information/icon-plus.svg"); }
+  .plus-icon:before {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    content: url("../images/information/icon-plus.svg"); }
+  .plus-icon:after {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: -8px;
+    right: 5px;
+    content: url("../images/information/icon-plus.svg"); }
+
+.company-profile .company-profile-content dl {
+  display: flex;
+  justify-content: flex-start;
+  padding: 4rem 0;
+  border-bottom: 1px solid #e6e6e6; }
+  .company-profile .company-profile-content dl dt {
+    max-width: 185px;
+    width: 100%; }
+    .company-profile .company-profile-content dl dt span {
+      color: #008fd4; }
+  .company-profile .company-profile-content dl dd {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%; }
+    .company-profile .company-profile-content dl dd ul {
+      max-width: 250px;
+      width: 100%; }
+
+.company-profile .company-profile-content .position .position-ul li span:first-of-type,
+.company-profile .company-profile-content .position .position-ul-name li span:first-of-type {
+  display: inline-block;
+  max-width: 100px;
+  width: 100%; }
+
+.company-profile .company-profile-content .position .position-ul-name li span:first-of-type {
+  max-width: 70px; }
+
+.dispatch-business {
+  margin: 10rem 0; }
+  .dispatch-business p.text {
+    text-align: center; }
+  .dispatch-business .img img {
+    margin: auto;
+    max-width: 100%; }
+
+.action-plan {
+  margin: 8rem 0; }
+  .action-plan .ac-pl-content .btn-action {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 560px;
+    width: 100%;
+    background-color: #008fd4;
+    position: relative;
+    padding: 38px 0; }
+    .action-plan .ac-pl-content .btn-action .icon-poligon {
+      position: absolute;
+      top: 50%;
+      right: 3rem;
+      transform: translateY(-50%); }
+    .action-plan .ac-pl-content .btn-action .text span {
+      font-size: 1.3rem;
+      color: white; }
+    .action-plan .ac-pl-content .btn-action .text .span-2 {
+      font-size: 1rem; }
+    .action-plan .ac-pl-content .btn-action .text .span-1 {
+      margin: 0 3rem; }
+
+.organization-chart .img-organization img {
+  margin: auto;
+  max-width: 100%; }
