@@ -1,11 +1,11 @@
 body {
   line-height: 1.4; }
 
-h3.title span {
+h3.title-info span {
   font-size: 3.8rem;
   font-weight: bold;
   display: block; }
-  h3.title span:first-letter {
+  h3.title-info span:first-letter {
     color: #008fd4; }
 
 .p-60 {
