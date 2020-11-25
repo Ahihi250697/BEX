@@ -3,19 +3,22 @@ const _line = $('.menuline');
 const _hamburger = $('.hamburger');
 const _navbar = $('.navbar');
 const _mark = $('.mark');
+const _totop = $('.to-top-button');
+const _wHeight = window.innerHeight;
 
 var _xstart = 0,
     _wstart = 0,
     _eqstart = 1;
 
-$(window).on('scroll load resize', function() {
+$(window).on('scroll load resize', function(e) {
     let _wW = window.innerWidth;
+    let _wY = window.pageYOffset;
 
-    // if (window.pageYOffset > 0) {
-    //     _header.addClass('active');
-    // } else {
-    //     _header.removeClass('active');
-    // }
+    if (_wY >= _wHeight / 2) {
+        _totop.addClass('active');
+    } else {
+        _totop.removeClass('active');
+    }
     if (_wW > 1024) {
         _remove();
     }
@@ -68,6 +71,7 @@ _menuItem.on('mouseenter', function() {
 
     if (!$(this).hasClass('active')) {
         _setLineNoneActive();
+
         _xstart = $(this).find('.nav-link').position().left;
         _wstart = $(this).find('.nav-link').innerWidth();
         _eqstart = $(this).index();
@@ -100,3 +104,12 @@ function _add() {
     _navbar.addClass('active');
     _mark.addClass('active');
 }
+_totop.click(function(e) {
+    e.preventDefault();
+    $("html,body").animate({
+            scrollTop: 0,
+        },
+        1000,
+        "swing"
+    );
+});

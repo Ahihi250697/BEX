@@ -2,6 +2,7 @@
 body {
   font-family: "Hiragino Sans", "ヒラギノ角ゴシック" "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
   font-size: 1.6rem;
+  color: #000;
 }
 
 @media screen and (max-width: 768px) {
@@ -226,6 +227,7 @@ body > main {
 
 .hero {
   width: 100%;
+  margin-bottom: 11rem;
 }
 .hero figure {
   width: 100%;
@@ -250,6 +252,19 @@ body > main {
   font-size: 5rem;
   display: block;
 }
+@media screen and (max-width: 767px) {
+  .hero figure figcaption h2 {
+    font-size: 1.4rem;
+  }
+  .hero figure figcaption h2 span {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    margin-bottom: 5rem;
+  }
+}
 
 .cm-title .title {
   font-family: "Sen", sans-serif;
@@ -257,16 +272,35 @@ body > main {
   font-size: 3.8rem;
   color: #000;
   text-transform: uppercase;
-  line-height: 0.7;
+  line-height: 0.9;
+  display: block;
 }
-.cm-title .title .first-letter {
+.cm-title .title:first-letter {
   color: #008FD4;
 }
 .cm-title + .lead {
   margin-top: 2rem;
+  display: block;
 }
-.cm-title + .cm-line {
+.cm-title + .lead + .cm-line {
   margin-top: 3.5rem;
+}
+.cm-title + .cm-line--low {
+  margin-top: 3.5rem;
+}
+@media screen and (max-width: 767px) {
+  .cm-title .title {
+    font-size: 2.5rem;
+  }
+  .cm-title + .lead {
+    margin-top: 1.2rem;
+  }
+  .cm-title + .lead + .cm-line {
+    margin-top: 1.5rem;
+  }
+  .cm-title + .cm-line--low {
+    margin-top: 1.5rem;
+  }
 }
 
 .other {
@@ -361,9 +395,6 @@ body > main {
   transform: translate(100%, 2px);
 }
 @media screen and (max-width: 768px) {
-  .other-container {
-    padding: 0 2rem;
-  }
   .other-container .other-box {
     max-width: 100%;
     height: 16rem;
@@ -372,6 +403,9 @@ body > main {
 .other-container .other-box figure img {
     height: 100%;
     object-fit: cover;
+  }
+  .other-container .other-box figcaption {
+    padding-left: 2rem;
   }
 }
 
@@ -393,7 +427,7 @@ body > main {
   transform: translateY(-50%);
   display: block;
 }
-.cm-line.low::after {
+.cm-line.cm-line--low::after {
   content: "";
   width: 50vw;
   height: 1px;
@@ -424,6 +458,11 @@ body > main {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (max-width: 1023px) {
+  .footer-container .wrap-flex {
+    flex-direction: column-reverse;
+  }
+}
 .footer-container .wrap-flex .flex-item {
   width: 100%;
 }
@@ -447,6 +486,12 @@ body > main {
   color: #000;
   line-height: 1;
   margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 1023px) {
+  .footer-container .wrap-flex .flex-item.first-child {
+    max-width: 100%;
+    margin-bottom: 5rem;
+  }
 }
 .footer-container .wrap-flex .flex-item.second-child {
   max-width: 60%;
@@ -480,6 +525,17 @@ body > main {
 .footer-container .wrap-flex .flex-item.second-child .item ul li a:hover {
   opacity: 0.75;
 }
+@media screen and (max-width: 1023px) {
+  .footer-container .wrap-flex .flex-item.second-child {
+    max-width: 100%;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-container .wrap-flex .flex-item.second-child .item {
+    max-width: calc((100% / 2) - 10px);
+  }
+}
 .footer-container .wrap-flex .combo-icon {
   width: 100%;
   max-width: 31rem;
@@ -504,6 +560,11 @@ body > main {
 .footer-container .wrap-flex .unlock-button img {
   margin-right: 1.4rem;
 }
+@media screen and (max-width: 1024px) {
+  .footer-container {
+    padding: 0 20px;
+  }
+}
 .footer + .container-low > .copy-right {
   font-size: 1rem;
   display: block;
@@ -511,9 +572,53 @@ body > main {
   margin: 2.5rem 0;
 }
 @media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 5rem;
+  }
   .footer-container {
     padding: 0 2rem;
   }
+}
+
+.to-top-button {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #008FD4;
+  border: 2px solid #008FD4;
+  font-family: "Sen", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  position: fixed;
+  z-index: 1000;
+  right: 7rem;
+  bottom: 10rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+.to-top-button.active {
+  visibility: visible;
+}
+.to-top-button::before {
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid #fff;
+  display: block;
+}
+.to-top-button:hover {
+  background-color: #fff;
+  border-color: #008FD4;
+  color: #008FD4;
+}
+.to-top-button:hover::before {
+  border-top-color: #008FDA;
 }
 
 /*# sourceMappingURL=common.css.map */
