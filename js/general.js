@@ -11,11 +11,6 @@ var _xstart = 0,
 $(window).on('scroll load resize', function() {
     let _wW = window.innerWidth;
 
-    // if (window.pageYOffset > 0) {
-    //     _header.addClass('active');
-    // } else {
-    //     _header.removeClass('active');
-    // }
     if (_wW > 1024) {
         _remove();
     }
@@ -68,6 +63,7 @@ _menuItem.on('mouseenter', function() {
 
     if (!$(this).hasClass('active')) {
         _setLineNoneActive();
+
         _xstart = $(this).find('.nav-link').position().left;
         _wstart = $(this).find('.nav-link').innerWidth();
         _eqstart = $(this).index();

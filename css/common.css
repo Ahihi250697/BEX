@@ -251,6 +251,14 @@ body > main {
   font-size: 5rem;
   display: block;
 }
+@media screen and (max-width: 767px) {
+  .hero figure figcaption h2 {
+    font-size: 1.4rem;
+  }
+  .hero figure figcaption h2 span {
+    font-size: 3rem;
+  }
+}
 
 .cm-title .title {
   font-family: "Sen", sans-serif;
@@ -273,6 +281,20 @@ body > main {
 }
 .cm-title + .cm-line--low {
   margin-top: 3.5rem;
+}
+@media screen and (max-width: 767px) {
+  .cm-title .title {
+    font-size: 2.5rem;
+  }
+  .cm-title + .lead {
+    margin-top: 1.2rem;
+  }
+  .cm-title + .lead + .cm-line {
+    margin-top: 1.5rem;
+  }
+  .cm-title + .cm-line--low {
+    margin-top: 1.5rem;
+  }
 }
 
 .other {
@@ -367,9 +389,6 @@ body > main {
   transform: translate(100%, 2px);
 }
 @media screen and (max-width: 768px) {
-  .other-container {
-    padding: 0 2rem;
-  }
   .other-container .other-box {
     max-width: 100%;
     height: 16rem;
@@ -378,6 +397,9 @@ body > main {
 .other-container .other-box figure img {
     height: 100%;
     object-fit: cover;
+  }
+  .other-container .other-box figcaption {
+    padding-left: 2rem;
   }
 }
 
@@ -430,6 +452,11 @@ body > main {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media screen and (max-width: 1023px) {
+  .footer-container .wrap-flex {
+    flex-direction: column-reverse;
+  }
+}
 .footer-container .wrap-flex .flex-item {
   width: 100%;
 }
@@ -453,6 +480,12 @@ body > main {
   color: #000;
   line-height: 1;
   margin-bottom: 1.5rem;
+}
+@media screen and (max-width: 1023px) {
+  .footer-container .wrap-flex .flex-item.first-child {
+    max-width: 100%;
+    margin-bottom: 5rem;
+  }
 }
 .footer-container .wrap-flex .flex-item.second-child {
   max-width: 60%;
@@ -486,6 +519,17 @@ body > main {
 .footer-container .wrap-flex .flex-item.second-child .item ul li a:hover {
   opacity: 0.75;
 }
+@media screen and (max-width: 1023px) {
+  .footer-container .wrap-flex .flex-item.second-child {
+    max-width: 100%;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-container .wrap-flex .flex-item.second-child .item {
+    max-width: calc((100% / 2) - 10px);
+  }
+}
 .footer-container .wrap-flex .combo-icon {
   width: 100%;
   max-width: 31rem;
@@ -510,6 +554,11 @@ body > main {
 .footer-container .wrap-flex .unlock-button img {
   margin-right: 1.4rem;
 }
+@media screen and (max-width: 1024px) {
+  .footer-container {
+    padding: 0 20px;
+  }
+}
 .footer + .container-low > .copy-right {
   font-size: 1rem;
   display: block;
@@ -517,6 +566,9 @@ body > main {
   margin: 2.5rem 0;
 }
 @media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 5rem;
+  }
   .footer-container {
     padding: 0 2rem;
   }
