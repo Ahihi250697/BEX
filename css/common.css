@@ -264,8 +264,12 @@ body > main {
 }
 .cm-title + .lead {
   margin-top: 2rem;
+  display: block;
 }
-.cm-title + .cm-line {
+.cm-title + .lead + .cm-line {
+  margin-top: 3.5rem;
+}
+.cm-title + .cm-line--low {
   margin-top: 3.5rem;
 }
 
@@ -393,7 +397,7 @@ body > main {
   transform: translateY(-50%);
   display: block;
 }
-.cm-line.low::after {
+.cm-line.cm-line--low::after {
   content: "";
   width: 50vw;
   height: 1px;

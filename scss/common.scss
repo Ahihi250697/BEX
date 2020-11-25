@@ -272,8 +272,12 @@ sans-serif;
     }
     &+.lead {
         margin-top: 2rem;
+        display: block;
+        &+.cm-line {
+            margin-top: 3.5rem;
+        }
     }
-    &+.cm-line {
+    &+.cm-line--low {
         margin-top: 3.5rem;
     }
 }
@@ -403,7 +407,7 @@ sans-serif;
         transform: translateY(-50%);
         display: block;
     }
-    &.low {
+    &.cm-line--low {
         &::after {
             content: '';
             width: 50vw;
