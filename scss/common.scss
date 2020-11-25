@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import 'functions.scss';
 body {
-    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+    font-family: "Hiragino Sans", "ヒラギノ角ゴシック" "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
     font-size: 1.6rem;
 }
 
@@ -42,6 +42,7 @@ sans-serif;
     top: 0;
     left: 0;
     z-index: 1024;
+    transition: all .3s ease;
     @include laptop {
         padding: 0 2rem;
     }
@@ -111,7 +112,7 @@ sans-serif;
                 height: 100%;
                 padding: 0 1rem;
                 color: #000;
-                font-family: HiraginoSans, sans-serif;
+                // font-family: HiraginoSans, sans-serif;
                 font-weight: 500;
             }
             &.active {
@@ -226,6 +227,7 @@ sans-serif;
 
 .main {
     margin-top: 6rem;
+    overflow: hidden;
 }
 
 .hero {
@@ -241,7 +243,7 @@ sans-serif;
             text-align: center;
             transform: translateY(-50%);
             h2 {
-                font-family: HiraginoSans;
+                // font-family: HiraginoSans;
                 font-size: 1.8rem;
                 color: #fff;
                 line-height: 1.4;
@@ -256,15 +258,23 @@ sans-serif;
     }
 }
 
-.title {
-    font-family: $font_Sen;
-    font-weight: 700;
-    font-size: 3.8rem;
-    color: #000;
-    text-transform: uppercase;
-    line-height: .7;
-    .first-letter {
-        color: #008FD4;
+.cm-title {
+    .title {
+        font-family: $font_Sen;
+        font-weight: 700;
+        font-size: 3.8rem;
+        color: #000;
+        text-transform: uppercase;
+        line-height: .7;
+        .first-letter {
+            color: #008FD4;
+        }
+    }
+    &+.lead {
+        margin-top: 2rem;
+    }
+    &+.cm-line {
+        margin-top: 3.5rem;
     }
 }
 
@@ -272,9 +282,12 @@ sans-serif;
     width: 1164px;
     max-width: 100%;
     margin: 0 auto;
+    @include ipadpro {
+        padding: 0 20px;
+    }
     &-title {
         h3 {
-            margin-bottom: 3.5rem;
+            // margin-bottom: 3.5rem;
         }
     }
     &-container {
@@ -322,7 +335,7 @@ sans-serif;
                 justify-content: center;
                 flex-direction: column;
                 padding-left: 4rem;
-                font-family: $font_HiraginoSans;
+                // font-family: $font_HiraginoSans;
                 font-size: 1.3rem;
                 color: #fff;
                 line-height: 1.4;
@@ -379,7 +392,7 @@ sans-serif;
     height: 1px;
     background-color: #E6E6E6;
     position: relative;
-    &::after {
+    &::before {
         content: '';
         width: 1.8rem;
         height: 2px;
@@ -390,11 +403,24 @@ sans-serif;
         transform: translateY(-50%);
         display: block;
     }
+    &.low {
+        &::after {
+            content: '';
+            width: 50vw;
+            height: 1px;
+            background-color: #E6E6E6;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: translateX(100%);
+        }
+    }
 }
 
 .footer {
     width: 100%;
     border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
     margin-top: 13.5rem;
     &-container {
         width: 1164px;
@@ -407,10 +433,11 @@ sans-serif;
             margin-top: 8rem;
             display: flex;
             flex-wrap: wrap;
+            justify-content: space-between;
             .flex-item {
                 width: 100%;
                 &.first-child {
-                    max-width: 34%;
+                    max-width: 40%;
                     .footer-logo {
                         a {
                             width: 100%;
@@ -426,7 +453,7 @@ sans-serif;
                         }
                     }
                     p {
-                        font-family: $font_HiraginoSans;
+                        // font-family: $font_HiraginoSans;
                         font-size: 1.3rem;
                         color: #000;
                         line-height: 1;
@@ -434,10 +461,37 @@ sans-serif;
                     }
                 }
                 &.second-child {
-                    max-width: 66%;
+                    max-width: 60%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-end;
                     .item {
                         width: 100%;
                         max-width: calc((100% / 4) - 10px);
+                        margin-bottom: 4rem;
+                        .title {
+                            font-size: 1.7rem;
+                            line-height: 1;
+                            display: block;
+                            &+ul {
+                                margin-top: 1.5rem;
+                            }
+                        }
+                        ul {
+                            .main-title {
+                                margin-bottom: 2rem;
+                            }
+                            li a {
+                                display: block;
+                                font-size: 1.2rem;
+                                color: #000;
+                                margin-bottom: 1.5rem;
+                                transition: all .3s ease;
+                                &:hover {
+                                    opacity: .75;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -456,12 +510,28 @@ sans-serif;
                 color: #fff;
                 align-items: center;
                 justify-content: center;
-                font-family: $font_HiraginoSans;
+                // font-family: $font_HiraginoSans;
                 font-size: 1.3rem;
+                transition: all .3s ease;
+                &:hover {
+                    opacity: .75;
+                }
                 img {
                     margin-right: 1.4rem;
                 }
             }
+        }
+    }
+    &+.container-low>.copy-right {
+        // font-family: $font_HiraginoSans;
+        font-size: 1rem;
+        display: block;
+        text-align: right;
+        margin: 2.5rem 0;
+    }
+    @include mobile {
+        &-container {
+            padding: 0 2rem;
         }
     }
 }
