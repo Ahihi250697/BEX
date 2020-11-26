@@ -1,2 +1,172 @@
 @charset "UTF-8";
 @import './functions.scss';
+$blue: #008FD4;
+.icon-arrow {
+    display: block;
+    border-left: 8px solid #000;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-right: 0;
+}
+
+$font_Sen :'Sen',
+sans-serif;
+.news {
+    width: 100%;
+    &-wrap {
+        width: 100%;
+    }
+    &-item {
+        width: 100%;
+        transition: all .3s ease;
+        &:hover {
+            background-color: rgba(#ccc, .2);
+            opacity: .75;
+        }
+        .article {
+            position: relative;
+            display: flex;
+            padding: 4rem 0;
+            &-time {
+                width: 17%;
+                min-width: 17%;
+                .year,
+                .date {
+                    font-family: $font_Sen;
+                    display: block;
+                }
+                .year {
+                    color: $blue;
+                }
+                .date {
+                    color: #000;
+                    font-weight: 700;
+                    font-size: 4rem;
+                }
+            }
+            .content {
+                width: 78%;
+                min-width: 78%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+                .title {
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    padding: .3rem;
+                    background-color: #000;
+                    color: #fff;
+                }
+                .description {
+                    color: #000;
+                    font-size: 1.8rem;
+                    letter-spacing: -.1rem;
+                    font-weight: 500;
+                }
+                @include screen640 {
+                    .description {
+                        font-size: 1.4rem;
+                        letter-spacing: .1rem;
+                    }
+                }
+            }
+            .see-more {
+                width: 5%;
+                min-width: 5%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            @include near_mobile {
+                flex-direction: column;
+                padding: 2rem 0;
+                &-time,
+                .content {
+                    width: 100%;
+                }
+                &-time {
+                    .date {
+                        font-size: 2rem;
+                    }
+                }
+                .content {
+                    .title {
+                        margin-top: 1.2rem;
+                        margin-bottom: 1.2rem;
+                    }
+                }
+                .see-more {
+                    display: none;
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+    &-page {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #E6E6E6;
+        padding-top: 5.6rem;
+    }
+}
+
+.pagination {
+    display: inline-flex;
+    .page-item {
+        .page-link {
+            color: #000;
+            padding: 0 .2rem;
+            margin: 0 1rem;
+            font-size: 1.8rem;
+            transition: all .3s ease;
+            &:hover {
+                color: rgba(#000, .7);
+            }
+            .sp-none {
+                @include screen640 {
+                    display: none;
+                }
+            }
+            &.active {
+                color: #008FD4 !important;
+            }
+            &.page-prev,
+            &.page-next {
+                color: #008FD4;
+                text-transform: uppercase;
+                font-family: $font_Sen;
+                position: relative;
+                display: flex;
+                align-items: center;
+                font-size: 1.6rem;
+                transition: all .3s ease;
+                .icon {
+                    display: block;
+                    transform: translateY(-1px);
+                }
+                &:hover {
+                    color: rgba(#008FD4, .7);
+                }
+                &.disabled {
+                    cursor: not-allowed;
+                    color: #C6C6C6 !important;
+                }
+            }
+            &.page-prev {
+                margin-right: 7rem;
+                margin-left: 0;
+                >.icon {
+                    margin-right: .8rem;
+                }
+            }
+            &.page-next {
+                margin-left: 7rem;
+                margin-right: 0;
+                >.icon {
+                    margin-left: .8rem;
+                }
+            }
+        }
+    }
+}
