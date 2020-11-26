@@ -6,6 +6,7 @@ const _mark = $('.mark');
 const _totop = $('.to-top-button');
 const _wHeight = window.innerHeight;
 
+
 var _xstart = 0,
     _wstart = 0,
     _eqstart = 1;
@@ -104,6 +105,7 @@ function _add() {
     _navbar.addClass('active');
     _mark.addClass('active');
 }
+
 _totop.click(function(e) {
     e.preventDefault();
     $("html,body").animate({

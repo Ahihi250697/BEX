@@ -576,6 +576,8 @@ sans-serif;
         display: block;
         text-align: right;
         margin: 2.5rem 0;
+        letter-spacing: .1rem;
+        font-weight: 500;
     }
     @include mobile {
         margin-top: 5rem;
@@ -605,17 +607,22 @@ sans-serif;
     text-transform: uppercase;
     transition: all .3s ease;
     visibility: hidden;
+    @include screen640 {
+        right: 2rem;
+        bottom: 6rem;
+    }
     &.active {
         // display: flex;
         visibility: visible;
     }
     &::before {
         content: '';
-        border-left: 5px solid transparent;
-        border-right: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        border-top: 5px solid #fff;
+        border-left: 3px solid transparent;
+        border-right: 3px solid transparent;
+        border-top: 0;
+        border-bottom: 4px solid #fff;
         display: block;
+        margin-bottom: .8rem;
     }
     &:hover {
         background-color: #fff;

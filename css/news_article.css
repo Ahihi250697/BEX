@@ -1,0 +1,147 @@
+.news-artile .wrap .article-pagination {
+    margin-top: 12rem;
+    text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+    .news-artile .wrap .article-pagination {
+        margin-top: 5rem;
+    }
+}
+
+.article {
+    width: 100%;
+}
+
+.article-time {
+    margin-bottom: 3rem;
+}
+
+.article-time .year,
+.article-time .date {
+    font-family: "Sen", sans-serif;
+    display: block;
+}
+
+.article-time .year {
+    color: #008FD4;
+}
+
+.article-time .date {
+    color: #000;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.article .content {
+    width: 100%;
+}
+
+.article .content .title {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #000;
+    margin-top: 2.5rem;
+    margin-bottom: 6rem;
+    line-height: 1.6;
+}
+
+.article .content .description {
+    color: #000;
+    font-size: 1.4rem;
+    line-height: 2;
+}
+
+.article .content .article-img {
+    margin-top: 6.5rem;
+    margin-bottom: 6.5rem;
+}
+
+@media screen and (max-width: 767px) {
+    .article-time,
+    .article .content {
+        width: 100%;
+    }
+    .article-time .date {
+        font-size: 2rem;
+    }
+    .article .content .title {
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+}
+
+.pagination {
+    display: inline-flex;
+}
+
+.pagination .page-item .page-link {
+    color: #000;
+    padding: 0 0.2rem;
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    transition: all 0.3s ease;
+}
+
+.pagination .page-item .page-link:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 640px) {
+    .pagination .page-item .page-link .sp-none {
+        display: none;
+    }
+}
+
+.pagination .page-item .page-link.active {
+    color: #008FD4 !important;
+}
+
+.pagination .page-item .page-link.page-prev,
+.pagination .page-item .page-link.page-next {
+    color: #008FD4;
+    text-transform: uppercase;
+    font-family: "Sen", sans-serif;
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+.pagination .page-item .page-link.page-prev .icon,
+.pagination .page-item .page-link.page-next .icon {
+    display: block;
+    transform: translateY(-1px);
+}
+
+.pagination .page-item .page-link.page-prev:hover,
+.pagination .page-item .page-link.page-next:hover {
+    color: rgba(0, 143, 212, 0.7);
+}
+
+.pagination .page-item .page-link.page-prev.disabled,
+.pagination .page-item .page-link.page-next.disabled {
+    cursor: not-allowed;
+    color: #C6C6C6 !important;
+}
+
+.pagination .page-item .page-link.page-prev {
+    margin-right: 8rem;
+    margin-left: 0;
+}
+
+.pagination .page-item .page-link.page-prev>.icon {
+    margin-right: 0.8rem;
+}
+
+.pagination .page-item .page-link.page-next {
+    margin-left: 8rem;
+    margin-right: 0;
+}
+
+.pagination .page-item .page-link.page-next>.icon {
+    margin-left: 0.8rem;
+}
+
+
+/*# sourceMappingURL=news_article.css.map */
