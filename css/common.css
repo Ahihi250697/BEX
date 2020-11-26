@@ -1,7 +1,8 @@
 @charset "UTF-8";
 body {
-  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+  font-family: "Hiragino Sans", "ヒラギノ角ゴシック" "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", sans-serif;
   font-size: 1.6rem;
+  color: #000;
 }
 
 @media screen and (max-width: 768px) {
@@ -34,6 +35,7 @@ body > main {
   top: 0;
   left: 0;
   z-index: 1024;
+  transition: all 0.3s ease;
 }
 @media screen and (max-width: 1240px) {
   .nav {
@@ -108,7 +110,6 @@ body > main {
   height: 100%;
   padding: 0 1rem;
   color: #000;
-  font-family: HiraginoSans, sans-serif;
   font-weight: 500;
 }
 .nav .menu-item.active .nav-link {
@@ -221,10 +222,12 @@ body > main {
 
 .main {
   margin-top: 6rem;
+  overflow: hidden;
 }
 
 .hero {
   width: 100%;
+  margin-bottom: 11rem;
 }
 .hero figure {
   width: 100%;
@@ -239,7 +242,6 @@ body > main {
   transform: translateY(-50%);
 }
 .hero figure figcaption h2 {
-  font-family: HiraginoSans;
   font-size: 1.8rem;
   color: #fff;
   line-height: 1.4;
@@ -250,17 +252,55 @@ body > main {
   font-size: 5rem;
   display: block;
 }
+@media screen and (max-width: 767px) {
+  .hero figure figcaption h2 {
+    font-size: 1.4rem;
+  }
+  .hero figure figcaption h2 span {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero {
+    margin-bottom: 5rem;
+  }
+}
 
-.title {
+.cm-title .title {
   font-family: "Sen", sans-serif;
   font-weight: 700;
   font-size: 3.8rem;
   color: #000;
   text-transform: uppercase;
-  line-height: 0.7;
+  line-height: 0.9;
+  display: block;
 }
-.title .first-letter {
+.cm-title .title:first-letter {
   color: #008FD4;
+}
+.cm-title + .lead {
+  margin-top: 2rem;
+  display: block;
+}
+.cm-title + .lead + .cm-line {
+  margin-top: 3.5rem;
+}
+.cm-title + .cm-line--low {
+  margin-top: 3.5rem;
+}
+@media screen and (max-width: 767px) {
+  .cm-title .title {
+    font-size: 2.5rem;
+  }
+  .cm-title + .lead {
+    margin-top: 1.2rem;
+  }
+  .cm-title + .lead + .cm-line {
+    margin-top: 1.5rem;
+  }
+  .cm-title + .cm-line--low {
+    margin-top: 1.5rem;
+  }
 }
 
 .other {
@@ -268,8 +308,10 @@ body > main {
   max-width: 100%;
   margin: 0 auto;
 }
-.other-title h3 {
-  margin-bottom: 3.5rem;
+@media screen and (max-width: 1024px) {
+  .other {
+    padding: 0 20px;
+  }
 }
 .other-container {
   width: 100%;
@@ -318,7 +360,6 @@ body > main {
   justify-content: center;
   flex-direction: column;
   padding-left: 4rem;
-  font-family: HiraginoSans, sans-serif;
   font-size: 1.3rem;
   color: #fff;
   line-height: 1.4;
@@ -354,9 +395,6 @@ body > main {
   transform: translate(100%, 2px);
 }
 @media screen and (max-width: 768px) {
-  .other-container {
-    padding: 0 2rem;
-  }
   .other-container .other-box {
     max-width: 100%;
     height: 16rem;
@@ -365,6 +403,9 @@ body > main {
 .other-container .other-box figure img {
     height: 100%;
     object-fit: cover;
+  }
+  .other-container .other-box figcaption {
+    padding-left: 2rem;
   }
 }
 
@@ -375,7 +416,7 @@ body > main {
   background-color: #E6E6E6;
   position: relative;
 }
-.cm-line::after {
+.cm-line::before {
   content: "";
   width: 1.8rem;
   height: 2px;
@@ -386,10 +427,21 @@ body > main {
   transform: translateY(-50%);
   display: block;
 }
+.cm-line.cm-line--low::after {
+  content: "";
+  width: 50vw;
+  height: 1px;
+  background-color: #E6E6E6;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+}
 
 .footer {
   width: 100%;
   border-top: 1px solid #E6E6E6;
+  border-bottom: 1px solid #E6E6E6;
   margin-top: 13.5rem;
 }
 .footer-container {
@@ -404,12 +456,18 @@ body > main {
   margin-top: 8rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media screen and (max-width: 1023px) {
+  .footer-container .wrap-flex {
+    flex-direction: column-reverse;
+  }
 }
 .footer-container .wrap-flex .flex-item {
   width: 100%;
 }
 .footer-container .wrap-flex .flex-item.first-child {
-  max-width: 34%;
+  max-width: 40%;
 }
 .footer-container .wrap-flex .flex-item.first-child .footer-logo a {
   width: 100%;
@@ -424,18 +482,59 @@ body > main {
   margin-bottom: 2.5rem;
 }
 .footer-container .wrap-flex .flex-item.first-child p {
-  font-family: HiraginoSans, sans-serif;
   font-size: 1.3rem;
   color: #000;
   line-height: 1;
   margin-bottom: 1.5rem;
 }
+@media screen and (max-width: 1023px) {
+  .footer-container .wrap-flex .flex-item.first-child {
+    max-width: 100%;
+    margin-bottom: 5rem;
+  }
+}
 .footer-container .wrap-flex .flex-item.second-child {
-  max-width: 66%;
+  max-width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 .footer-container .wrap-flex .flex-item.second-child .item {
   width: 100%;
   max-width: calc((100% / 4) - 10px);
+  margin-bottom: 4rem;
+}
+.footer-container .wrap-flex .flex-item.second-child .item .title {
+  font-size: 1.7rem;
+  line-height: 1;
+  display: block;
+}
+.footer-container .wrap-flex .flex-item.second-child .item .title + ul {
+  margin-top: 1.5rem;
+}
+.footer-container .wrap-flex .flex-item.second-child .item ul .main-title {
+  margin-bottom: 2rem;
+}
+.footer-container .wrap-flex .flex-item.second-child .item ul li a {
+  display: block;
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 1.5rem;
+  transition: all 0.3s ease;
+}
+.footer-container .wrap-flex .flex-item.second-child .item ul li a:hover {
+  opacity: 0.75;
+}
+@media screen and (max-width: 1023px) {
+  .footer-container .wrap-flex .flex-item.second-child {
+    max-width: 100%;
+    justify-content: space-between;
+  }
+}
+@media screen and (max-width: 767px) {
+  .footer-container .wrap-flex .flex-item.second-child .item {
+    max-width: calc((100% / 2) - 10px);
+  }
 }
 .footer-container .wrap-flex .combo-icon {
   width: 100%;
@@ -452,11 +551,74 @@ body > main {
   color: #fff;
   align-items: center;
   justify-content: center;
-  font-family: HiraginoSans, sans-serif;
   font-size: 1.3rem;
+  transition: all 0.3s ease;
+}
+.footer-container .wrap-flex .unlock-button:hover {
+  opacity: 0.75;
 }
 .footer-container .wrap-flex .unlock-button img {
   margin-right: 1.4rem;
+}
+@media screen and (max-width: 1024px) {
+  .footer-container {
+    padding: 0 20px;
+  }
+}
+.footer + .container-low > .copy-right {
+  font-size: 1rem;
+  display: block;
+  text-align: right;
+  margin: 2.5rem 0;
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 5rem;
+  }
+  .footer-container {
+    padding: 0 2rem;
+  }
+}
+
+.to-top-button {
+  width: 6rem;
+  height: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #008FD4;
+  border: 2px solid #008FD4;
+  font-family: "Sen", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  position: fixed;
+  z-index: 1000;
+  right: 7rem;
+  bottom: 10rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  visibility: hidden;
+}
+.to-top-button.active {
+  visibility: visible;
+}
+.to-top-button::before {
+  content: "";
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-top: 5px solid #fff;
+  display: block;
+}
+.to-top-button:hover {
+  background-color: #fff;
+  border-color: #008FD4;
+  color: #008FD4;
+}
+.to-top-button:hover::before {
+  border-top-color: #008FDA;
 }
 
 /*# sourceMappingURL=common.css.map */
