@@ -79,6 +79,10 @@
     font-size: 2.3rem;
 }
 
+.libary-css .font24 {
+    font-size: 2.4rem;
+}
+
 .libary-css .font28 {
     font-size: 2.8rem;
 }
@@ -142,7 +146,7 @@
     font-family: 'Sen', sans-serif;
 }
 
-.libary-css .texUp {
+.libary-css .textUp {
     text-transform: uppercase;
 }
 
@@ -156,15 +160,7 @@
     position: relative;
 }
 
-main {
-    overflow: hidden;
-}
-
-main .link-go {
-    text-decoration: underline;
-}
-
-.bttn-more {
+.libary-css .bttn-more {
     position: absolute;
     bottom: 0;
     background-color: black;
@@ -188,7 +184,7 @@ main .link-go {
     padding: 5px;
 }
 
-.bttn-more span {
+.libary-css .bttn-more span {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -200,7 +196,7 @@ main .link-go {
     justify-content: center;
 }
 
-.bttn-more span::after {
+.libary-css .bttn-more span::after {
     content: '';
     display: block;
     height: 0;
@@ -209,6 +205,15 @@ main .link-go {
     border-left: 8px solid white;
     border-bottom: 4px solid transparent;
     margin-left: 5px;
+    margin-top: 2px;
+}
+
+body {
+    overflow: hidden;
+}
+
+main .link-go {
+    text-decoration: underline;
 }
 
 .style-title {
@@ -234,7 +239,7 @@ main .link-go {
     height: 2px;
     background-color: #008fd4;
     bottom: -0.5px;
-    width: 20px;
+    width: 18px;
     z-index: 1;
 }
 
@@ -786,6 +791,22 @@ main .link-go {
 
 .people-content h4 {
     line-height: 1.8;
+}
+
+footer {
+    position: relative;
+    z-index: 2;
+}
+
+footer::after {
+    content: '';
+    top: -150px;
+    left: 0;
+    bottom: -100px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    background-color: white;
 }
 
 /*# sourceMappingURL=sourcemap/index.css.map */
