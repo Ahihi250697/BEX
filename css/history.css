@@ -1,0 +1,82 @@
+.history {
+  margin-bottom: 13rem; }
+  .history .history-content {
+    position: relative; }
+    .history .history-content::before {
+      content: "";
+      width: 1px;
+      height: 92%;
+      position: absolute;
+      top: 55px;
+      left: 118px;
+      background-color: #e6e6e6; }
+    .history .history-content dl {
+      display: flex;
+      justify-content: flex-start;
+      padding-top: 3.3rem; }
+      .history .history-content dl dt {
+        padding-top: 3px;
+        max-width: 116px;
+        width: 100%; }
+        .history .history-content dl dt .num {
+          font-size: 3.4rem;
+          font-weight: bold;
+          line-height: 1;
+          font-family: "Sen", sans-serif; }
+          .history .history-content dl dt .num span {
+            color: #008fd4; }
+      .history .history-content dl dd {
+        padding-bottom: 3.2rem;
+        margin-left: 4.5rem;
+        width: 100%;
+        border-bottom: 1px dashed #e6e6e6; }
+        .history .history-content dl dd span {
+          display: block;
+          position: relative;
+          line-height: 4rem; }
+          .history .history-content dl dd span:after {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: -45px;
+            width: 5px;
+            height: 5px;
+            background-color: #008fd4;
+            content: ""; }
+        .history .history-content dl dd a {
+          display: flex;
+          align-items: center;
+          text-decoration: underline;
+          color: #008fd4;
+          width: 100%;
+          transition: 0.3s ease-in-out; }
+          .history .history-content dl dd a .icon-link {
+            padding: 0 20px 0 75px; }
+          .history .history-content dl dd a:hover {
+            opacity: 0.8; }
+    .history .history-content dl:last-of-type dd {
+      border-bottom: none; }
+
+@media screen and (max-width: 768px) {
+  .history {
+    margin-bottom: 7rem; }
+    .history .history-content:before {
+      top: 40px; }
+    .history .history-content dl dd a .icon-link {
+      padding: 0 20px; }
+    .history .history-content dl dd span {
+      line-height: 1.4; } }
+
+@media screen and (max-width: 576px) {
+  .history .history-content::before {
+    display: none; }
+  .history .history-content dl {
+    flex-wrap: wrap;
+    padding-top: 20px; }
+    .history .history-content dl dd {
+      margin: 0;
+      padding-left: 20px;
+      padding-top: 10px;
+      padding-bottom: 20px; }
+      .history .history-content dl dd span:after {
+        left: -20px; } }
