@@ -1,0 +1,124 @@
+.greeting {
+  margin-bottom: 130px; }
+  .greeting__introduce {
+    position: relative;
+    z-index: 0;
+    padding-top: 100px; }
+    .greeting__introduce::before {
+      content: '+';
+      position: absolute;
+      top: 0;
+      left: -5px;
+      z-index: -1; }
+    .greeting__introduce::after {
+      content: '+';
+      position: absolute;
+      top: 0;
+      right: -5px;
+      z-index: -1; }
+    .greeting__introduce h2 {
+      text-align: center;
+      position: relative;
+      z-index: 0;
+      line-height: 2; }
+      .greeting__introduce h2::before {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 2px;
+        background-color: #008FD4; }
+    .greeting__introduce h3 {
+      text-align: center;
+      font-size: 3rem;
+      line-height: 1.5;
+      color: #008FD4;
+      margin: 60px auto; }
+    .greeting__introduce__text-box {
+      max-width: calc(100% - 130px);
+      width: 100%;
+      margin: auto;
+      position: relative;
+      z-index: 0; }
+      .greeting__introduce__text-box p {
+        font-size: 1.4rem;
+        letter-spacing: 1.5px; }
+      .greeting__introduce__text-box--icon {
+        position: absolute;
+        z-index: -1;
+        max-width: 80px; }
+        .greeting__introduce__text-box--icon-top {
+          top: 0;
+          left: 0;
+          transform: translate(-65%, -65%); }
+        .greeting__introduce__text-box--icon-bottom {
+          bottom: 0;
+          right: 0;
+          transform: translate(65%, 65%); }
+  .greeting__signature {
+    position: relative;
+    z-index: 1;
+    width: calc(100% + 100px);
+    background-color: #fff;
+    transform: translate(-50px, 50px); }
+    .greeting__signature figure {
+      position: relative;
+      z-index: 0;
+      max-width: calc(100% - 100px);
+      width: 100%;
+      margin: auto;
+      padding-bottom: 30px;
+      padding-right: 65px;
+      min-height: 255px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .greeting__signature figure::before {
+        content: '+';
+        position: absolute;
+        bottom: 30px;
+        left: -5px;
+        z-index: -1; }
+      .greeting__signature figure::after {
+        content: '+';
+        position: absolute;
+        bottom: 30px;
+        right: -5px;
+        z-index: -1; }
+      .greeting__signature figure figcaption {
+        font-size: 1.3rem;
+        line-height: 1;
+        padding-right: 30px; }
+      .greeting__signature figure img {
+        max-width: 150px; }
+  @media screen and (max-width: 1023px) {
+    .greeting {
+      margin-bottom: 100px; }
+      .greeting__signature {
+        width: 100%;
+        transform: translate(0);
+        margin-top: 50px; }
+        .greeting__signature figure {
+          max-width: 100%; } }
+  @media screen and (max-width: 767px) {
+    .greeting__introduce {
+      padding-top: 60px; }
+      .greeting__introduce h3 {
+        font-size: 1.8rem;
+        margin: 35px auto; }
+      .greeting__introduce__text-box {
+        max-width: calc(100% - 40px); }
+        .greeting__introduce__text-box--icon {
+          max-width: 40px; }
+    .greeting__signature figure {
+      padding-right: 20px;
+      min-height: 150px; }
+      .greeting__signature figure figcaption {
+        font-size: 1rem; }
+      .greeting__signature figure img {
+        max-width: 90px; } }
+
+/*# sourceMappingURL=greeting.css.map */
