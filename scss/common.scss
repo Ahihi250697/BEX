@@ -115,6 +115,9 @@ sans-serif;
                 color: #000;
                 // font-family: HiraginoSans, sans-serif;
                 font-weight: 500;
+                @include onIE {
+                    padding-top: 6px;
+                }
             }
             &.active {
                 .nav-link {
@@ -229,6 +232,7 @@ sans-serif;
 .main {
     margin-top: 6rem;
     overflow: hidden;
+    display: block;
 }
 
 .hero {
@@ -629,7 +633,7 @@ sans-serif;
         border-color: #008FD4;
         color: #008FD4;
         &::before {
-            border-top-color: #008FDA;
+            border-bottom-color: #008FDA;
         }
     }
 }

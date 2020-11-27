@@ -68,6 +68,13 @@
     color: #fff;
 }
 
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .news-item .article .content .title {
+        padding-top: 6px;
+    }
+}
+
 .news-item .article .content .description {
     color: #000;
     font-size: 1.8rem;
