@@ -1,3 +1,5 @@
+// const { get } = require("browser-sync");
+
 $('.people-slider').slick({
     infinite: true,
     slidesToShow: 2,
@@ -18,3 +20,26 @@ $('.people-slider').slick({
       slick.$slides.first().prev().addClass('active');
     }
   });
+
+  $('.scroll-text').on('click', function(){
+    $('body, html').animate({scrollTop: $('.firstView').outerHeight()}, 'slow');
+  });
+
+  function getScrollTop() {
+    return document.documentElement.scrollTop
+            || document.body.scrollTop
+            || window.scrollY
+            || window.pageYOffset;
+  }
+let t = getScrollTop();
+let scrollAll = $('body').outerHeight() - window.innerHeight;
+  window.addEventListener('scroll', function(){
+    if(t < getScrollTop()) {
+      $('.firstView-container.banner').css('transform', 'translateY('+ (-getScrollTop()/4) +'px)')
+      t = getScrollTop();
+    }else{
+      $('.firstView-container.banner').css('transform', 'translateY('+ (-getScrollTop()/4) +'px)')
+      t = getScrollTop();
+    }
+    // $('.firstView-container.banner')
+  })
