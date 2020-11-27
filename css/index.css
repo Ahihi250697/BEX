@@ -518,6 +518,18 @@ main .link-go {
 
 .news-inner dl::after {
     content: '';
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 4px solid transparent;
+    border-left: 8px solid black;
+    border-bottom: 4px solid transparent;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.news-inner dl::after {
+    content: '';
     height: 0;
     width: 0;
     right: 0;
@@ -917,6 +929,9 @@ footer::after {
         max-width: 100%;
         margin-top: 40px;
     }
+    .news-inner dl::after {
+        margin-top: 20px;
+    }
     .news-inner dl {
         padding: 0;
         -webkit-box-align: start;
@@ -1033,4 +1048,3 @@ footer::after {
     }
 }
 
-/*# sourceMappingURL=sourcemap/index.css.map */
