@@ -18,3 +18,7 @@ $('.people-slider').slick({
       slick.$slides.first().prev().addClass('active');
     }
   });
+
+  $('.scroll-text').on('click', function(){
+    $('body, html').animate({scrollTop: $('.firstView').outerHeight()}, 'slow');
+  })
