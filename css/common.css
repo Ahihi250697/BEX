@@ -723,5 +723,5 @@ body>main {
 }
 
 .to-top-button:hover::before {
-    border-top-color: #008FDA;
+    border-bottom-color: #008FDA;
 }
