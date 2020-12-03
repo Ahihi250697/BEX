@@ -126,6 +126,7 @@ body>main {
     padding: 0 1rem;
     color: #000;
     font-weight: 500;
+    font-family: "ヒラギノ角ゴ ProN W3";
 }
 
 @media screen and (-ms-high-contrast: active),
@@ -594,6 +595,7 @@ body>main {
 
 .footer-container .wrap-flex .flex-item.second-child .item ul .main-title {
     margin-bottom: 2rem;
+    font-weight: 500;
 }
 
 .footer-container .wrap-flex .flex-item.second-child .item ul li a {
