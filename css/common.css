@@ -330,6 +330,7 @@ body>main {
 .cm-title+.lead {
     margin-top: 2rem;
     display: block;
+    letter-spacing: 0.2rem;
 }
 
 .cm-title+.lead+.cm-line {
@@ -693,6 +694,7 @@ body>main {
     z-index: 1000;
     right: 7rem;
     bottom: 10rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
     transition: all 0.3s ease;
     visibility: hidden;
