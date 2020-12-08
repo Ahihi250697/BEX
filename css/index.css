@@ -290,6 +290,7 @@ main .link-go {
     left: 0;
     white-space: nowrap;
     padding-top: 28px;
+    font-weight: 300;
 }
 
 .text-box {
@@ -394,6 +395,7 @@ main .link-go {
     cursor: pointer;
     display: block;
     width: 20px;
+    font-size: 1rem;
 }
 
 .firstView-buffer, .firstView-banner {
@@ -813,6 +815,7 @@ main .link-go {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+
 }
 
 .people-link {
@@ -843,6 +846,14 @@ main .link-go {
 
 .people-content h4 {
     line-height: 1.8;
+}
+
+.people-content > .text-box-color {
+    padding: 0px 5px;
+}
+
+.people-content > .text-sign {
+    letter-spacing: 0.4rem;
 }
 
 footer {

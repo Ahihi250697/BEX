@@ -63,7 +63,7 @@
 .news-item .article .content .title {
     font-size: 1.2rem;
     font-weight: 700;
-    padding: 0.3rem;
+    padding: 0.3rem 1rem;
     background-color: #000;
     color: #fff;
 }
