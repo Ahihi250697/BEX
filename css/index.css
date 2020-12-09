@@ -1051,6 +1051,9 @@ footer::after {
     .libary-css .m-b105 {
         margin-bottom: 60px;
     }
+    .people-bttn {
+        top: 30%;
+    }
 }
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
