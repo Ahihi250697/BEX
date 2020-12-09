@@ -463,7 +463,7 @@ body>main {
 @media screen and (max-width: 768px) {
     .other-container .other-box {
         max-width: 100%;
-        height: 16rem;
+        height: 10rem;
     }
     .other-container .other-box figure,
     .other-container .other-box figure img {
@@ -705,6 +705,8 @@ body>main {
     .to-top-button {
         right: 2rem;
         bottom: 6rem;
+        width: 4.5rem;
+        height: 4.5rem;
     }
 }
 
