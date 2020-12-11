@@ -623,9 +623,6 @@ body>main {
     .footer-container .wrap-flex .flex-item.second-child .item {
         max-width: calc((100% / 2) - 10px);
     }
-    .menu-item:not(.active) .nav-link {
-        border-bottom: 1px solid #000;
-    }
 }
 
 .footer-container .wrap-flex .combo-icon {

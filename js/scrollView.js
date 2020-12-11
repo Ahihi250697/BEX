@@ -34,16 +34,21 @@
     return curtop;
   }
   let count = -1,
-      ArrayClass = ['fadeUp', 'fadeLeft', 'fadeDown'];
-  function checkClass(ele, mapClass) {
+      ArrayClass = ['fadeUp', 'fadeLeft', 'fadeDown'],
+      offsetCheck = 0;
+  function checkClass(ele, mapClass, offset) {
     for(let i = 0; i <= mapClass.length - 1; i++) {
       if(ele.is('.' + mapClass[i])) {
-        count = count + 1;
-        setTimeout(function() {
-          ele.removeClass(mapClass[i]);
-          ele.addClass('runed');
-        }, 200 * count);
-        return true;
+        if(offsetCheck != offset) {
+          offsetCheck = offset;
+          count = count + 1;
+        }
+          setTimeout(function() {
+            ele.removeClass(mapClass[i]);
+            ele.addClass('runed');
+          }, 200 * count);
+          return true;
+        
       }
       }
     }
@@ -65,7 +70,7 @@
       if(elTop <= viewportBottom) {
         if (inViewWithOffset) {
           if (!$el.is('.runed')) {
-            checkClass($el, ArrayClass);
+            checkClass($el, ArrayClass, elTop);
           }
         }else {
           for(let i = 0; i <= ArrayClass.length - 1; i++) {
