@@ -229,12 +229,8 @@ h4.title:after {
   .three-dots {
     margin: 50px auto;
   }
-  .dispatch-business .img {
-    max-width: 100%;
-    overflow-x: auto;
-  }
   .dispatch-business .img img {
-    max-width: unset;
+    image-rendering: -webkit-optimize-contrast;
   }
   .organization-chart {
     margin-bottom: 5rem;

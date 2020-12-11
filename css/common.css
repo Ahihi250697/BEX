@@ -127,7 +127,6 @@ body>main {
     padding: 0 1rem;
     color: #000;
     font-weight: 500;
-    font-family: "ヒラギノ角ゴ ProN W3";
 }
 
 @media screen and (-ms-high-contrast: active),
@@ -624,6 +623,9 @@ body>main {
     .footer-container .wrap-flex .flex-item.second-child .item {
         max-width: calc((100% / 2) - 10px);
     }
+    .menu-item:not(.active) .nav-link {
+        border-bottom: 1px solid #000;
+    }
 }
 
 .footer-container .wrap-flex .combo-icon {
@@ -732,4 +734,26 @@ body>main {
 
 .to-top-button:hover::before {
     border-bottom-color: #008FDA;
+}
+
+.inview {
+    transition-property: all;
+    transition-duration: 0.8s;
+    transition-timing-function: cubic-bezier(0.03, 0.57, 0.48, 1.02);
+    opacity: 1;
+    transform: translate3d(0,0,0)
+}
+
+.fadeUp {
+    transform: translate3d(0px, 100px, 0);
+    opacity: 0;
+}
+.fadeLeft {
+    transform: translate3d(100px, 0px, 0);
+    opacity: 0;
+}
+
+.fadeDown {
+    transform: translate3d(0px, -100px, 0);
+    opacity: 0;
 }
