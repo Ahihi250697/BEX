@@ -144,6 +144,10 @@
     }
 }
 
+.only-sp {
+    display: none;
+}
+
 @media screen and (max-width: 767px) {
     .greeting__introduce {
         padding-top: 60px;
@@ -169,12 +173,12 @@
         max-width: 90px;
     }
     .greeting__img {
-        height: 40vw;
-        min-height: 320px;
+        display: none;
     }
-    .greeting__img img {
-        height: 100%;
-        object-fit: cover;
-        /* width: auto; */
+    .greeting__img.only-sp {
+        display: block;
     }
+}
+
+*/
 }

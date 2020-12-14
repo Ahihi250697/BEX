@@ -75,9 +75,7 @@ _menuItem.on('mouseenter', function() {
     })
 }).on('click', function() {
 
-    if ($(this).find('.nav-link').attr('href') != "#" || window.innerWidth > 1024) {
-        return false;
-    }
+
 
     if (!$(this).hasClass('active')) {
         $(this).addClass('active');
@@ -86,7 +84,9 @@ _menuItem.on('mouseenter', function() {
         $(this).removeClass('active');
         $(this).find('.sub-menu').stop().slideUp("300");
     }
-    return false;
+    if ($(this).find('.nav-link').attr('href') == "#") {
+        return false;
+    }
 })
 
 _hamburger.on('click', function() {
