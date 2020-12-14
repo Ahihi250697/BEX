@@ -247,9 +247,9 @@ h4.title:after {
         max-width: 100%;
         overflow-x: auto;
     }
-    .organization-chart .img-organization img {
+    /* .organization-chart .img-organization img {
         max-width: unset;
-    }
+    } */
     .company-profile .company-profile-content dl {
         flex-wrap: wrap;
     }

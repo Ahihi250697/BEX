@@ -64,7 +64,6 @@ _menuItem.on('mouseenter', function() {
         left: _x,
         'transition-duration': _timeDuration + 's'
     });
-    console.log(_x);
 }).on('mouseout', function() {
     let _wW = window.innerWidth;
     if (_wW <= 1024) return;
@@ -76,15 +75,18 @@ _menuItem.on('mouseenter', function() {
     })
 }).on('click', function() {
 
+    if ($(this).find('.nav-link').attr('href') != "#" || window.innerWidth > 1024) {
+        return false;
+    }
+
     if (!$(this).hasClass('active')) {
         $(this).addClass('active');
-        let _sub = $(this).find('.sub-menu');
-        _sub.slideDown("300");
-        console.log(_sub);
+        $(this).find('.sub-menu').stop().slideDown("300");
     } else {
         $(this).removeClass('active');
-        $(this).find('.sub-menu').slideUp("300");
+        $(this).find('.sub-menu').stop().slideUp("300");
     }
+    return false;
 })
 
 _hamburger.on('click', function() {
