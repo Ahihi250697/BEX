@@ -4,10 +4,11 @@ $('.people-slider').slick({
     infinite: true,
     slidesToShow: 2,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     arrows: true,
     prevArrow: $('.people-bttn.right button').get(0),
-    nextArrow: $('.people-bttn.left button').get(0)
+    nextArrow: $('.people-bttn.left button').get(0),
+    pauseOnHover: false
   });
 
   $('.people-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){

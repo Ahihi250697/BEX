@@ -77,7 +77,7 @@
     color: inherit;
     display: block;
     -webkit-transition: all .3s ease;
-            transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .libary-css a:hover {
@@ -91,7 +91,8 @@
     cursor: pointer;
 }
 
-.libary-css button, .libary-css a {
+.libary-css button,
+.libary-css a {
     outline: none;
 }
 
@@ -129,7 +130,7 @@
 }
 
 .libary-css .fontSen {
-    font-family: 'Sen', sans-serif;
+    /* font-family: 'Sen', sans-serif; */
 }
 
 .libary-css .textUp {
@@ -225,7 +226,7 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .company-list {
@@ -240,6 +241,7 @@
 
 .company-content {
     margin-top: 20px;
+    line-height: 2.5rem;
 }
 
 .company-content .text-en {
@@ -280,5 +282,3 @@
         font-size: 2rem;
     }
 }
-
-/*# sourceMappingURL=sourcemap/company.css.map */

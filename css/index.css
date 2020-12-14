@@ -290,6 +290,7 @@ main .link-go {
     left: 0;
     white-space: nowrap;
     padding-top: 28px;
+    font-weight: 300;
 }
 
 .text-box {
@@ -395,6 +396,7 @@ main .link-go {
     cursor: pointer;
     display: block;
     width: 20px;
+    font-size: 1rem;
 }
 
 .firstView-buffer,
@@ -705,6 +707,11 @@ main .link-go {
     top: 0;
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.people-bttn button:hover {
+    opacity: 0.8;
 }
 
 .people-bttn button::after,
@@ -853,6 +860,14 @@ main .link-go {
 
 .people-content h4 {
     line-height: 1.8;
+}
+
+.people-content>.text-box-color {
+    padding: 0px 5px;
+}
+
+.people-content>.text-sign {
+    letter-spacing: 0.4rem;
 }
 
 footer {
@@ -1043,6 +1058,9 @@ footer::after {
     }
     .libary-css .m-b105 {
         margin-bottom: 60px;
+    }
+    .people-bttn {
+        top: 30%;
     }
 }
 

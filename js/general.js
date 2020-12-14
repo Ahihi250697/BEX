@@ -1,4 +1,5 @@
 const _menuItem = $('.menu-item');
+const _subMenu = $('.sub-menu');
 const _line = $('.menuline');
 const _hamburger = $('.hamburger');
 const _navbar = $('.navbar');
@@ -6,6 +7,10 @@ const _mark = $('.mark');
 const _totop = $('.to-top-button');
 const _wHeight = window.innerHeight;
 
+//-----close all sub menu
+$.each(_subMenu, function() {
+    $(this).slideUp();
+});
 
 var _xstart = 0,
     _wstart = 0,
@@ -58,7 +63,8 @@ _menuItem.on('mouseenter', function() {
         width: _w,
         left: _x,
         'transition-duration': _timeDuration + 's'
-    })
+    });
+    console.log(_x);
 }).on('mouseout', function() {
     let _wW = window.innerWidth;
     if (_wW <= 1024) return;
@@ -71,16 +77,13 @@ _menuItem.on('mouseenter', function() {
 }).on('click', function() {
 
     if (!$(this).hasClass('active')) {
-        _setLineNoneActive();
-
-        _xstart = $(this).find('.nav-link').position().left;
-        _wstart = $(this).find('.nav-link').innerWidth();
-        _eqstart = $(this).index();
         $(this).addClass('active');
-        _line.css({
-            width: _wstart,
-            left: _xstart,
-        })
+        let _sub = $(this).find('.sub-menu');
+        _sub.slideDown("300");
+        console.log(_sub);
+    } else {
+        $(this).removeClass('active');
+        $(this).find('.sub-menu').slideUp("300");
     }
 })
 
