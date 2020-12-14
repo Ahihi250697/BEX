@@ -2,7 +2,6 @@
     0% {
         background-position: 50% 100%;
     }
-
     100% {
         background-position: 50% 47%;
     }
@@ -12,7 +11,6 @@
     0% {
         background-position: 50% 100%;
     }
-
     100% {
         background-position: 50% 47%;
     }
@@ -97,7 +95,7 @@
     color: inherit;
     display: block;
     -webkit-transition: all .3s ease;
-            transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .libary-css a:hover {
@@ -111,7 +109,8 @@
     cursor: pointer;
 }
 
-.libary-css button, .libary-css a {
+.libary-css button,
+.libary-css a {
     outline: none;
 }
 
@@ -247,7 +246,8 @@ main .link-go {
     z-index: 0;
 }
 
-.style-title::before, .style-title::after {
+.style-title::before,
+.style-title::after {
     content: '';
     position: absolute;
     left: 0;
@@ -350,7 +350,8 @@ main .link-go {
     z-index: 0;
 }
 
-.firstView .scroll-line::after, .firstView .scroll-line::before {
+.firstView .scroll-line::after,
+.firstView .scroll-line::before {
     content: '';
     top: 0;
 }
@@ -359,7 +360,7 @@ main .link-go {
     width: 1px;
     left: 50%;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     height: 100%;
     position: absolute;
     z-index: -1;
@@ -376,27 +377,28 @@ main .link-go {
     background-position: 50% 100%;
     background-size: 100% 300%;
     -webkit-animation-name: scrollEf;
-            animation-name: scrollEf;
+    animation-name: scrollEf;
     -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    animation-timing-function: linear;
 }
 
 .firstView .scroll-text {
     color: white;
     -webkit-writing-mode: vertical-lr;
-        -ms-writing-mode: tb-lr;
-            writing-mode: vertical-lr;
+    -ms-writing-mode: tb-lr;
+    writing-mode: vertical-lr;
     margin-left: 2px;
     cursor: pointer;
     display: block;
     width: 20px;
 }
 
-.firstView-buffer, .firstView-banner {
+.firstView-buffer,
+.firstView-banner {
     width: 100%;
     padding-top: 60px;
 }
@@ -554,7 +556,7 @@ main .link-go {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -582,7 +584,7 @@ main .link-go {
     left: 50%;
     z-index: 1;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .about-caption {
@@ -601,12 +603,14 @@ main .link-go {
     max-width: calc(100%/3 - 13.3px);
 }
 
-.balance-link, .business-link {
+.balance-link,
+.business-link {
     width: 100%;
     position: relative;
 }
 
-.balance-wrap, .business-wrap {
+.balance-wrap,
+.business-wrap {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -615,7 +619,8 @@ main .link-go {
     justify-content: space-between;
 }
 
-.balance-content, .business-content {
+.balance-content,
+.business-content {
     position: absolute;
     z-index: 1;
     top: 0;
@@ -628,7 +633,7 @@ main .link-go {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -638,7 +643,8 @@ main .link-go {
     color: white;
 }
 
-.balance-content p, .business-content p {
+.balance-content p,
+.business-content p {
     margin-top: 10px;
 }
 
@@ -663,7 +669,8 @@ main .link-go {
     right: 100%;
 }
 
-.people-bttn.right button::after, .people-bttn.right button::before {
+.people-bttn.right button::after,
+.people-bttn.right button::before {
     border-left: 7px solid white;
 }
 
@@ -675,7 +682,8 @@ main .link-go {
     left: 100%;
 }
 
-.people-bttn.left button::after, .people-bttn.left button::before {
+.people-bttn.left button::after,
+.people-bttn.left button::before {
     border-right: 7px solid white;
 }
 
@@ -696,10 +704,11 @@ main .link-go {
     position: absolute;
     top: 0;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-.people-bttn button::after, .people-bttn button::before {
+.people-bttn button::after,
+.people-bttn button::before {
     content: '';
     display: block;
     height: 0;
@@ -758,7 +767,7 @@ main .link-go {
     visibility: visible;
     opacity: 1;
     -webkit-transition: all .3s ease;
-            transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .people-slider-inner.active::after {
@@ -774,7 +783,8 @@ main .link-go {
     z-index: 2;
 }
 
-.people-slider-inner .icon-add::after, .people-slider-inner .icon-add::before {
+.people-slider-inner .icon-add::after,
+.people-slider-inner .icon-add::before {
     content: '';
     background-color: black;
     width: 100%;
@@ -786,19 +796,19 @@ main .link-go {
 
 .people-slider-inner .icon-add::before {
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 .people-slider-inner .icon-add.top {
     top: 0;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .people-slider-inner .icon-add.bottom {
     bottom: 0;
     -webkit-transform: translate(-50%, 50%);
-            transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%);
 }
 
 .people-slider-wrap {
@@ -835,7 +845,7 @@ main .link-go {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -884,7 +894,8 @@ footer::after {
     .style-title h3 .text-nihon {
         padding-top: 12px;
     }
-    .firstView-buffer, .firstView-banner {
+    .firstView-buffer,
+    .firstView-banner {
         max-height: 600px;
         height: 100%;
     }
@@ -944,11 +955,10 @@ footer::after {
     }
     .news-inner .text-news {
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
         margin: 5px 0 15px;
     }
-
-    .news-inner .text-news > * {
+    .news-inner .text-news>* {
         margin: 10px 20px 10px 0;
     }
     .business {
@@ -959,7 +969,6 @@ footer::after {
         margin-right: auto;
         margin-left: auto;
     }
-
     .business-link:last-of-type {
         margin-top: 30px;
     }
@@ -968,7 +977,6 @@ footer::after {
         margin: auto;
         min-width: 280px;
     }
-
     .balance-link:not(:last-of-type) {
         margin-bottom: 30px;
     }
@@ -980,12 +988,14 @@ footer::after {
         height: 0;
         margin: auto;
     }
-    .balance-link, .business-link {
+    .balance-link,
+    .business-link {
         width: auto;
     }
-    .balance-wrap, .business-wrap {
+    .balance-wrap,
+    .business-wrap {
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
         -webkit-box-align: start;
         -ms-flex-align: start;
         align-items: flex-start;
@@ -1003,7 +1013,6 @@ footer::after {
     .people-slider-wrap {
         display: block;
     }
-
     .people-slider-wrap a {
         width: 100%;
     }
@@ -1012,15 +1021,12 @@ footer::after {
         height: auto;
         margin-top: 20px;
     }
-
     .people-content .text-box-color {
         margin-bottom: 15px;
     }
-
     .people-content p {
         margin-top: 15px;
     }
-
     .people-content .text-sign {
         margin-top: 15px;
         font-size: 1.8rem;
@@ -1032,19 +1038,17 @@ footer::after {
     .libary-css .p-top140 {
         padding-top: 70px;
     }
-
     .libary-css .p-bot140 {
         padding-bottom: 70px;
     }
-
     .libary-css .m-b105 {
         margin-bottom: 60px;
     }
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
     .people {
         overflow: hidden;
     }
 }
-
