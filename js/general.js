@@ -10,7 +10,7 @@ const _wHeight = window.innerHeight;
 
 //-----close all sub menu
 $.each(_subMenu, function() {
-    $(this).slideUp();
+    $(this).slideUp("300");
 });
 
 var _xstart = 0,
