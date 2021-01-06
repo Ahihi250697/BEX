@@ -574,7 +574,7 @@ body>main {
     position: relative;
 }
 
-.cm-line::before {
+.cm-line:not(.none)::before {
     content: "";
     width: 1.8rem;
     height: 2px;
