@@ -1,0 +1,151 @@
+.recruit-h3 .text-en {
+    font-size: 2.4rem;
+}
+
+.recruit-linehead {
+    font-size: 2.3rem;
+}
+
+.libary-css img {
+    width: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.libary-css a {
+    color: inherit;
+    display: block;
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+}
+
+.libary-css a:hover {
+    opacity: .8;
+}
+
+.libary-css button {
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.libary-css button, .libary-css a, .libary-css input {
+    outline: none;
+}
+
+.libary-css .d-block {
+    display: block;
+}
+
+.libary-css .bg-white {
+    z-index: 3;
+    position: relative;
+}
+
+.libary-css .bg-white::after {
+    content: '';
+    z-index: -1;
+    background-color: white;
+    top: 0;
+    bottom: -2px;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+.hero {
+    margin-bottom: 80px;
+}
+
+.recruit {
+    font-family: 'HiraginoSans', sans-serif;
+}
+
+.recruit-linehead {
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 60px;
+}
+
+.recruit-lists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.recruit-list {
+    max-width: 540px;
+    width: calc(50% - 15px);
+    min-width: 280px;
+}
+
+.recruit-img {
+    position: relative;
+}
+
+.recruit-img img {
+    width: 100%;
+}
+
+.recruit-h3 {
+    margin-top: 25px;
+    line-height: 1;
+}
+
+.recruit-h3 span {
+    display: block;
+}
+
+.recruit-h3 .text-en {
+    font-family: 'Sen', sans-serif;
+    text-transform: uppercase;
+}
+
+.recruit-h3 .text-nihon {
+    margin-top: 10px;
+    color: #008fd4;
+    font-weight: normal;
+}
+
+.footer {
+    margin-top: 160px;
+}
+
+@media screen and (max-width: 767px) {
+    .recruit-h3 .text-en {
+        font-size: 1.8rem;
+    }
+    .recruit-linehead {
+        font-size: 1.8rem;
+    }
+    .hero {
+        margin-bottom: 50px;
+    }
+    .recruit-linehead {
+        margin-bottom: 40px;
+    }
+    .recruit-lists {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .recruit-list {
+        max-width: calc(50% - 10px);
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .recruit-h3 {
+        margin-top: 15px;
+    }
+    .recruit-h3 .text-nihon {
+        margin-top: 8px;
+    }
+    .footer {
+        margin-top: 30px;
+    }
+}
+
+/*# sourceMappingURL=sourcemap/recruit.css.map */
