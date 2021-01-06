@@ -52,7 +52,7 @@ $(window).on('click', function(e) {
                 console.log(_w, _h, _mx);
                 if (_mx > _x + _w || _mx < _x || _my < _y || _my > _y + _h) {
                     $(this).click();
-                    console.log("close");
+                    
                 }
                 //$(this).removeClass('active');
                 //$(this).parent().find('.option-list').removeClass('active');
