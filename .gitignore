@@ -10,3 +10,4 @@ foundation-emails-template
 foundation-zurb-template
 PostCss
 css/sourcemap
+*.map
