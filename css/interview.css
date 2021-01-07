@@ -75,7 +75,7 @@
       font-weight: 400; }
       .people__list__child .detail p span {
         font-size: 1.5rem;
-        font-weight: 600;
+        font-weight: bold;
         margin: 0 10px 0 30px; }
 @media screen and (max-width: 767px) {
   .people__list {
@@ -93,10 +93,13 @@
   margin-bottom: 120px; }
   .mv__content {
     max-width: calc(50% - 500px);
-    width: 100%; }
+    width: 100%;
+    display: flex;
+    align-items: flex-end; }
     .mv__content h2 {
       font-family: "Sen", sans-serif;
       writing-mode: vertical-lr;
+      -ms-writing-mode: tb-rl;
       color: #008FD4;
       font-weight: bold;
       font-size: 3.6rem;
@@ -112,6 +115,7 @@
         bottom: 0;
         left: 50%;
         transform: translate(-50%, 100px);
+        -ms-transform: translate(0%, 100px);
         width: 1px;
         height: 55px;
         background-color: #008FD4; }
@@ -133,7 +137,8 @@
       .mv__banner__detail h3 {
         font-family: HiraginoSans, sans-serif;
         font-size: 1.8rem;
-        line-height: 1.5; }
+        line-height: 1.5;
+        font-weight: bold; }
       .mv__banner__detail > span {
         width: 20px;
         display: block;
@@ -173,14 +178,16 @@
     .info__block__left h3 {
       font-family: HiraginoSans, sans-serif;
       font-size: 1.8rem;
-      line-height: 2; }
+      line-height: 2;
+      font-weight: bold; }
   .info__block__right {
     max-width: calc(50% + 185px);
     width: 100%; }
     .info__block__right p {
       font-family: HiraginoSans, sans-serif;
       font-size: 1.4rem;
-      margin-bottom: 100px; }
+      margin-bottom: 100px;
+      line-height: 2; }
 .info__schedule__header {
   background-color: #000;
   color: #fff;
