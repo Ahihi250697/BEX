@@ -137,7 +137,8 @@
       .mv__banner__detail h3 {
         font-family: HiraginoSans, sans-serif;
         font-size: 1.8rem;
-        line-height: 1.5; }
+        line-height: 1.5;
+        font-weight: bold; }
       .mv__banner__detail > span {
         width: 20px;
         display: block;
