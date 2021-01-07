@@ -6,7 +6,7 @@
 
 .cm-box {
     width: 100%;
-    margin-top: 10rem;
+    margin-top: 16rem;
 }
 
 .cm-box .cm-title .title {
@@ -115,7 +115,7 @@
 }
 
 .data-list.data-flex:first-child {
-    margin-top: 15rem;
+    margin-top: 10rem;
     border-top: 1px solid #E6E6E6;
 }
 

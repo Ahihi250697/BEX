@@ -16,7 +16,7 @@
     color: inherit;
     display: block;
     -webkit-transition: all .3s ease;
-            transition: all .3s ease;
+    transition: all .3s ease;
 }
 
 .libary-css a:hover {
@@ -30,7 +30,9 @@
     cursor: pointer;
 }
 
-.libary-css button, .libary-css a, .libary-css input {
+.libary-css button,
+.libary-css a,
+.libary-css input {
     outline: none;
 }
 
@@ -130,7 +132,7 @@
     }
     .recruit-lists {
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
+        flex-wrap: wrap;
     }
     .recruit-list {
         max-width: calc(50% - 10px);
@@ -147,5 +149,3 @@
         margin-top: 30px;
     }
 }
-
-/*# sourceMappingURL=sourcemap/recruit.css.map */
