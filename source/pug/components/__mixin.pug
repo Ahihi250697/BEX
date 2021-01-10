@@ -1,0 +1,75 @@
+
+mixin head(path, title, css, fonts)
+	<link rel="icon" type="image/png" href="#{path}images/commons/icon_favicon.png">
+	each val in css
+		<link href="#{path + val}" rel="stylesheet">
+	title= title
+	if fonts
+		include ./__fonts.pug
+
+
+mixin list-ul(path, surClass, lastClass, img, content, reverse)
+	if !reverse
+		li(class= surClass + '-' + lastClass[0] + ' odd')
+			figure(class= surClass + '-' + lastClass[1])
+				img(src= path + img, alt= content[0])
+			div(class= surClass + '-' + lastClass[2])
+				h3(class= surClass + '-' + lastClass[3])= content[0]
+				div(class= surClass + '-text')
+					p(class= surClass + '-p')!= content[1]
+					dl(class= surClass + '-dl')
+						dt(class= surClass + '-dt')= content[2]
+						dd(class= surClass + '-dd')= content[3]
+	else 
+		li(class= surClass + '-' + lastClass[0] + ' even')
+			div(class= surClass + '-' + lastClass[2])
+				h3(class= surClass + '-' + lastClass[3])= content[0]
+				div(class= surClass + '-text')
+					p(class= surClass + '-p')!= content[1]
+					dl(class= surClass + '-dl')
+						dt(class= surClass + '-dt')= content[2]
+						dd(class= surClass + '-dd')= content[3]
+			figure(class= surClass + '-' + lastClass[1])
+				img(src= path + img, alt= content[0])
+
+
+mixin list-infor(surClass, lastClass, contents)
+	div(class= surClass + '-' + lastClass[0])
+		each content in contents
+			dl(class= surClass + '-dl')
+				dt(class= surClass + '-dt')!= content[0]
+				dd(class= surClass + '-dd')!= content[1]
+
+mixin title_h2(surClass, cmClass, contents)
+	h2(class= surClass + '-h2' + ' ' + cmClass)
+		span.text-en= contents[0]
+		span.text-nihon= contents[1]
+
+mixin list-year(surClass, lastClass, contents, bttnLeft, bttnRight, active)
+	div(class= surClass + '-' + lastClass[0])
+		span(class= surClass + '-line outer ' + active)
+		button(class= surClass + '-bttn' + ' ' + bttnLeft)
+			span.bttn-arrow
+				span
+				span
+		button(class= surClass + '-bttn' + ' ' + bttnRight + ' ' + active)
+			span.bttn-arrow
+				span
+				span
+		div(class= surClass + '-wrap')
+			each content, index in contents
+				if index == 0
+					div(class= surClass + '-' + lastClass[1] + ' ' + active)
+						span(class= surClass + '-' + lastClass[2])
+						p(class= surClass + '-' + lastClass[3])
+							span(class= lastClass[4])= content[0]
+							span(class= lastClass[5])= content[1]
+				else 
+					span(class= surClass + '-line inner')
+					div(class= surClass + '-' + lastClass[1])
+						span(class= surClass + '-' + lastClass[2])
+						p(class= surClass + '-' + lastClass[3])
+							span(class= lastClass[4])= content[0]
+							span(class= lastClass[5])= content[1]
+		span(class= surClass + '-line outer')
+

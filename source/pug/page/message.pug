@@ -1,0 +1,8 @@
+include ../components/__mixin.pug
+- var path = '../'
+doctype html
+html
+    head 
+        include ../components/__meta.pug
+        +head( path ,'MESSAGE', ['assets/css/reset.css', 'assets/css/bootstrap_custom.css', 'css/common.css', 'css/message.css'], true )
+    body 
