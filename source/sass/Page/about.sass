@@ -2,3 +2,95 @@
 @import ../Abstract/__extend
 @import ../Abstract/__mixin
 @import ../Layout/__common
+
+
+.hero
+    margin-bottom: 90px
+.about
+    @extend %__fontHanSan 
+    &-lineHead
+        padding-bottom: 120px
+        border-bottom: 1px solid $colorline2
+        p
+            max-width: 815px 
+            line-height: 2
+            margin: 0px auto
+            font-weight: bold
+    &-lists 
+        margin-top: 136px
+    &-list 
+        display: flex
+        justify-content: space-between
+        &:not(:last-of-type) 
+            margin-bottom: 140px
+    &-inner 
+        max-width: calc(50% - 20px)
+        display: flex
+        flex-direction: column
+        width: 100%
+        position: relative
+        &:first-child
+            align-items: flex-start
+            .about-line
+                &::after
+                    left: calc(100% - 50vw)
+        &:last-child
+            align-items: flex-end
+            .about-line
+                &::after
+                    right: calc(100% - 50vw)
+    &-title, &-content, &-img, &-line
+        max-width: 544px
+        width: 100%
+    &-index 
+        line-height: 2.3rem 
+        text-align: center 
+        display: block 
+        width: 82px 
+        background-color: black 
+        color: $textBlue
+        strong
+            margin-left: 5px
+    &-h3 
+        @extend %__font23
+        line-height: 2
+        margin: 30px 0px 25px
+    &-content
+        margin-top: 40px
+        p 
+            line-height: 2
+            font-size: 1.4rem
+            letter-spacing: 0.06rem
+    &-imgBg 
+        position: absolute 
+        z-index: -1
+        top: 0px 
+        left: 0px 
+        height: 100%
+        width: 100%
+        display: flex
+        align-items: center 
+        justify-content: center
+        &-wrap 
+            width: 80%
+    &-line 
+        height: 1px
+        position: relative
+        &::after, &::before
+            content: ''
+            top: 0px 
+            position: absolute
+        &::after
+            height: 1px 
+            width: calc(50vw + 80px)
+            background-color: $colorline2
+            z-index: -1
+        &::before
+            height: 2px 
+            z-index: 1
+            left: 0px
+            width: 19px
+            background-color: $colorBlue
+            transform: translateY(-50%)
+
+

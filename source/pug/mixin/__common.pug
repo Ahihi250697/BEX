@@ -36,6 +36,23 @@ mixin bannerChild(folderImg, titleEn)
 		</figure>
 	</section>
 
+mixin js(js)
+	<a class="to-top-button" href="#">top</a>
+	each val in js
+		<script src="#{path + val}"></script>
+
+mixin blockCommon(golink, textEn, textNihon)
+	<section class="external-link">
+		<div class="container-low">
+			<a href="#{path + golink}" class="external-link__block">
+				<h2>#{textEn}<br>
+					<span>#{textNihon}</span>
+				</h2>
+				<span class="external-link__block__line"></span>
+			</a>
+		</div>
+	</section>
+
 mixin header()
 	<header>
 		<nav class="nav">

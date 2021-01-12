@@ -1,20 +1,38 @@
 mixin about-lists(imgLink, constents)
     ul(class= surClass + '-lists')
         each content, index in constents
-            if !index % 2
+            if !(index % 2)
                 li(class= surClass + '-list odd')
-                    div(class= surClass + '-contents')
-                        span(class= surClass + '-index')= 'About' + (index + 1)
-                        h3(class= surClass + '-title')!= content[0] + '<br>' + content[1]
-                        p(class= surClass + '-content')!= `ダミーです1980年の創業以来、エンジニアリング企業として技術サービスを提供してまいりました。近年では、プロジェクト単位で開発業務を任せて頂けるようになり、お客様からの信頼も向上していると実感をしております。これもひとえに社員一人一人の実績が信頼となって実を結び始めた結果だと実感しています、1980年の創業以来、エンジニアリング企業として技術サービスを提供してまいりました。近年では、プロジェクト単位で開発業務を任せて頂けるようになり。`
-                    figure(class= surClass + '-img')
-                        img(src= path + imgLink + (index + 1) + '.jpg', alt= content[0] + content[1])
+                    div(class= surClass + '-inner')
+                        div(class= surClass + '-imgBg')
+                            figure(class= surClass + '-imgBg-wrap')
+                                img(src= path + imgLink[1] + (index + 1) + '.png', alt= content[0] + content[1])
+                        div(class= surClass + '-title')
+                            span(class= surClass + '-index')= 'About'
+                                strong= '0'+ (index + 1)
+                            h3(class= surClass + '-h3')!= content[0] + '<br>' + content[1]
+                        div(class= surClass + '-line')
+                            span
+                        div(class= surClass + '-content')
+                            p!= `ダミーです1980年の創業以来、エンジニアリング企業として技術サービスを提供してまいりました。近年では、プロジェクト単位で開発業務を任せて頂けるようになり、お客様からの信頼も向上していると実感をしております。これもひとえに社員一人一人の実績が信頼となって実を結び始めた結果だと実感しています、1980年の創業以来、エンジニアリング企業として技術サービスを提供してまいりました。近年では、プロジェクト単位で開発業務を任せて頂けるようになり。`
+                    div(class= surClass + '-inner')
+                        figure(class= surClass + '-img')
+                            img(src= path + imgLink[0] + (index + 1) + '.jpg', alt= content[0] + content[1])
             else 
                 li(class= surClass + '-list even')
-                    figure(class= surClass + '-img')
-                        img(src= path + imgLink + (index + 1) + '.jpg', alt= content[0] + content[1])
-                    div(class= surClass + '-contents')
-                        span(class= surClass + '-index')= 'About' + (index + 1)
-                        h3(class= surClass + '-title')!= content[0] + '<br>' + content[1]
-                        p(class= surClass + '-content')!= `ダミーです1980年の創業以来、エンジニアリング企業として技術サービスを提供してまいりました。近年では、プロジェクト単位で開発業務を任せて頂けるようになり、お客様からの信頼も向上していると実感をしております。これもひとえに社員一人一人の実績が信頼となって実を結び始めた結果だと実感しています、1980年の創業以来、エンジニアリング企業として技術サービスを提供してまいりました。近年では、プロジェクト単位で開発業務を任せて頂けるようになり。`
-                    
+                    div(class= surClass + '-inner')
+                        figure(class= surClass + '-img')
+                            img(src= path + imgLink[0] + (index + 1) + '.jpg', alt= content[0] + content[1])
+                    div(class= surClass + '-inner')
+                        div(class= surClass + '-imgBg')
+                            figure(class= surClass + '-imgBg-wrap')
+                                img(src= path + imgLink[1] + (index + 1) + '.png', alt= content[0] + content[1])
+                        div(class= surClass + '-title')
+                            span(class= surClass + '-index')= 'About'
+                                strong= '0'+ (index + 1)
+                            h3(class= surClass + '-h3')!= content[0] + '<br>' + content[1]
+                        div(class= surClass + '-line')
+                            span
+                        div(class= surClass + '-content')
+                            p!= `ダミーです1980年の創業以来、エンジニアリング企業として技術サービスを提供してまいりました。近年では、プロジェクト単位で開発業務を任せて頂けるようになり、お客様からの信頼も向上していると実感をしております。これもひとえに社員一人一人の実績が信頼となって実を結び始めた結果だと実感しています、1980年の創業以来、エンジニアリング企業として技術サービスを提供してまいりました。近年では、プロジェクト単位で開発業務を任せて頂けるようになり。`
+                        

@@ -7,53 +7,54 @@ include ../components/__variables.pug
 - var surClass = 'about'
 doctype html
 html
-    head 
-        +meta()
-        +head(['assets/css/reset.css', 'assets/css/bootstrap_custom.css', 'css/common.css', 'css/common-low.css', 'css/company.css'], true )
-    body 
-        +header()
-        main.main
-            +bannerChild('about', 'ABOUT')
-            .libary-css(class= surClass)
-            div(class= surClass + 'lineHead')
-                .container-low
-                    p ダミーです1980年の創業以来、エンジニアリング企業として技術サービスを提供してまいりました。近年では、プロジェクト単位で開発業務を任せて頂けるようになり、お客様からの信頼も向上していると実感をしております。これもひとえに社員一人一人の実績が信頼となって実を結び始めた結果だと実感しています。
-            .container-low
-                +about-lists('images/about/img_photo', [
-                    [
-                        '世界のTOYOTA、',
-                        'その設計を支える技術力'
-                    ],
-                    [
-                        'トヨタ資本のない企業ながら、',
-                        '高い受注シェアを誇る'
-                    ],
-                    [
-                        'お客様からの信頼で築いた',
-                        '40年を超える歴史'
-                    ],
-                    [
-                        '特許出願した発明の件数は',
-                        '100を優に超える',
-                    ],
-                    [
-                        'CATIA V5、3Dプリンターを活用した',
-                        '高度な検討/開発力',
-                    ],
-                    [
-                        '自動車設計だけでなく',
-                        'システム開発も手掛ける',
-                    ],
-                    [
-                        '多すぎないからこそ、',
-                        '行き届いた支援が可能'
-                    ],
-                    [
-                        '定期的な面談で、',
-                        '適切なキャリア形成をサポート'
-                    ]
-                ])
-            
-        +footer()
+	head 
+		+meta()
+		+head(['assets/css/reset.css', 'assets/css/bootstrap_custom.css', 'css/common.css', 'css/common-low.css', 'css/about.css'], true )
+	body 
+		+header()
+		main.main
+			+bannerChild('about', 'ABOUT')
+			.libary-css(class= surClass)
+			div(class= surClass + '-lineHead')
+				.container-low
+					p ダミーです1980年の創業以来、エンジニアリング企業として技術サービスを提供してまいりました。近年では、プロジェクト単位で開発業務を任せて頂けるようになり、お客様からの信頼も向上していると実感をしております。これもひとえに社員一人一人の実績が信頼となって実を結び始めた結果だと実感しています。
+			.container-low
+				+about-lists(['images/about/img_photo', 'images/about/img_symbol'], [
+					[
+						'世界のTOYOTA、',
+						'その設計を支える技術力'
+					],
+					[
+						'トヨタ資本のない企業ながら、',
+						'高い受注シェアを誇る'
+					],
+					[
+						'お客様からの信頼で築いた',
+						'40年を超える歴史'
+					],
+					[
+						'特許出願した発明の件数は',
+						'100を優に超える',
+					],
+					[
+						'CATIA V5、3Dプリンターを活用した',
+						'高度な検討/開発力',
+					],
+					[
+						'自動車設計だけでなく',
+						'システム開発も手掛ける',
+					],
+					[
+						'多すぎないからこそ、',
+						'行き届いた支援が可能'
+					],
+					[
+						'定期的な面談で、',
+						'適切なキャリア形成をサポート'
+					]
+					])
+			+blockCommon('#', 'Business', '人材力と技術領域')
+		+footer()
+		+js(['assets/js/jquery-3.5.1.min.js', 'js/scrollView.js', 'js/general.js'])
 
-                    
+
