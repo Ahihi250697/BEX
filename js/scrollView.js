@@ -8,25 +8,19 @@
             || window.pageYOffset;
   }
   function getViewportHeight() {
-    var height = window.innerHeight; // Safari, Opera
-    // if this is correct then return it. iPad has compat Mode, so will
-    // go into check clientHeight (which has the wrong value).
+    var height = window.innerHeight;
     if (height) {
       return height;
     }
     var mode = document.compatMode;
 
     if (mode || !$.support.boxModel) {
-      // IE, Gecko
-      height = mode === 'CSS1Compat' ? document.documentElement.clientHeight : // Standards
-      document.body.clientHeight; // Quirks
+      height = mode === 'CSS1Compat' ? document.documentElement.clientHeight :
+      document.body.clientHeight; 
     }
     return height;
   }
   function offsetTop(debug) {
-    // Manually calculate offset rather than using jQuery's offset
-    // This works-around iOS < 4 on iPad giving incorrect value
-    // cf http://bugs.jquery.com/ticket/6446#comment:9
     var curtop = 0;
     for (var obj = debug; obj; obj = obj.offsetParent) {
       curtop += obj.offsetTop;
@@ -93,8 +87,7 @@
       }, delay);
     }
     return runOncePerDelay;
-  } // ready.inview kicks the event to pick up any elements already in view.
-  // note however, this only works if the plugin is included after the elements are bound to 'inview'
+  }
   var runner = createFunctionLimitedToOneExecutionPerDelay(checkInView, 100);
 
   $(window).on('checkInView.inview click.inview ready.inview scroll.inview resize.inview', runner);
