@@ -51,7 +51,8 @@
     .people__list__child .detail h2 {
       font-family: HiraginoSans, sans-serif;
       font-size: 1.6rem;
-      margin: 30px 0 20px; }
+      margin: 30px 0 20px;
+      font-weight: 400; }
     .people__list__child .detail span.detail__line {
       display: block;
       width: 100%;
@@ -75,8 +76,11 @@
       font-weight: 400; }
       .people__list__child .detail p span {
         font-size: 1.5rem;
-        font-weight: bold;
+        font-weight: 400;
         margin: 0 10px 0 30px; }
+@media screen and (max-width: 1023px) {
+  .people__list__child .detail p span {
+    margin-left: 0; } }
 @media screen and (max-width: 767px) {
   .people__list {
     width: 100%; }
@@ -138,7 +142,7 @@
         font-family: HiraginoSans, sans-serif;
         font-size: 1.8rem;
         line-height: 1.5;
-        font-weight: bold; }
+        font-weight: 300; }
       .mv__banner__detail > span {
         width: 20px;
         display: block;
@@ -179,7 +183,7 @@
       font-family: HiraginoSans, sans-serif;
       font-size: 1.8rem;
       line-height: 2;
-      font-weight: bold; }
+      font-weight: 300; }
   .info__block__right {
     max-width: calc(50% + 185px);
     width: 100%; }
@@ -242,11 +246,60 @@
       width: 100%;
       font-family: 'HiraginoSans', sans-serif; }
       .info__schedule__content dl dd h3 {
-        font-size: 1.8;
-        line-height: 1.5; }
+        font-size: 1.8rem;
+        line-height: 1.5;
+        font-weight: 300; }
       .info__schedule__content dl dd p {
         font-size: 1.4rem;
         font-weight: 400; }
+
+.recruit__block {
+  max-width: calc(50% - 240px);
+  width: 100%;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 90px; }
+  .recruit__block h2 {
+    font-family: 'Sen', sans-serif;
+    font-size: 2.8rem;
+    font-weight: bold;
+    line-height: 1.2; }
+    .recruit__block h2:first-letter {
+      color: #008FD4; }
+    .recruit__block h2 span {
+      display: block;
+      font-family: 'HiraginoSans', sans-serif;
+      font-size: 1.6rem;
+      font-weight: 300; }
+  .recruit__block__line {
+    display: block;
+    position: relative;
+    z-index: 0;
+    width: 100%;
+    height: 10px;
+    margin-top: 15px; }
+    .recruit__block__line::before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      height: 1px;
+      background-color: #000; }
+    .recruit__block__line::after {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      top: 50%;
+      right: -2px;
+      transform: translateY(-50%);
+      width: 0;
+      height: 0;
+      border-top: 4px solid transparent;
+      border-left: 15px solid #000;
+      border-bottom: 4px solid transparent; }
 
 @media screen and (max-width: 1023px) {
   .mv__content {
