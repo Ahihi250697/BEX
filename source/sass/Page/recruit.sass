@@ -1,0 +1,57 @@
+@import ../Abstract/__variables
+@import ../Abstract/__extend
+@import ../Abstract/__mixin
+@import ../Layout/__common
+
+
+.hero
+    margin-bottom: 80px
+    +m()
+        margin-bottom: 50px
+.recruit
+    font-family: 'HiraginoSans', sans-serif
+    &-linehead
+        @extend %__font23
+        text-align: center
+        line-height: 1.8
+        margin-bottom: 60px
+        +m()
+            margin-bottom: 40px
+    &-lists
+        display: flex
+        justify-content: space-between
+        +m()
+            flex-wrap: wrap
+    &-list 
+        max-width: 540px 
+        width: calc(50% - 15px)
+        min-width: 280px
+        +m()
+            max-width: calc(50% - 10px)
+            margin-bottom: 20px
+            width: 100%
+    &-img 
+        position: relative
+        img 
+            width: 100%
+    &-h3 
+        margin-top: 25px
+        line-height: 1
+        +m()
+            margin-top: 15px
+        span 
+            display: block 
+        .text-en 
+            font-family: 'Sen', sans-serif
+            @extend %__font24 
+            text-transform: uppercase
+        .text-nihon 
+            margin-top: 10px
+            color: $colorBlue
+            font-weight: normal
+            +m()
+                margin-top: 8px
+.footer 
+    margin-top: 160px
+    +m()
+        margin-top: 30px

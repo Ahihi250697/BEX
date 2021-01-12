@@ -1,0 +1,517 @@
+@import ../Abstract/__variables
+@import ../Abstract/__extend
+@import ../Abstract/__mixin
+@import ../Abstract/__function
+@import ../Layout/__common
+
+main 
+    overflow: hidden
+    .link-go
+        text-decoration: underline
+.style-title
+    position: relative
+    z-index: 0
+    &::before,&::after
+        content: ''
+        position: absolute
+        left: 0px
+    &::after
+        height: 1px
+        background-color: #E6E6E6
+        bottom: 0px
+        width: 100%
+        z-index: -1
+    &::before
+        height: 2px
+        background-color: $colorTitle
+        bottom: -0.5px
+        width: 18px
+        z-index: 1
+    h3
+        display: flex
+        width: 100%
+        justify-content: space-between
+        position: relative
+        align-items: flex-end
+        padding-bottom: 30px
+        +m()
+            padding-bottom: 15px
+        .text-nihon
+            position: absolute
+            top: 100%
+            left: 0px
+            white-space: nowrap
+            padding-top: 28px
+            +m()
+                padding-top: 12px
+.text-box
+    min-width: 76px
+    line-height: 2rem
+    color: white
+    background-color: black
+    display: block
+    text-align: center
+    margin-right: 30px
+.text-box-color
+    line-height: 2.1rem
+    text-align: center
+    background-color: black
+    width: 78px
+    display: block
+    color: #72D1FF
+    text-transform: capitalize
+.wrap-title
+    max-width: calc(50% + 580px)
+    width: 100%
+.firstView
+    display: flex 
+    justify-content: flex-end
+    z-index: 1
+    position: relative 
+    .scroll
+        &-down
+            position: absolute 
+            right: 0px 
+            max-width: 100px
+            bottom: 0px
+            height: 100px
+            display: flex 
+            align-items: flex-start
+            width: 7vw
+        &-line 
+            height: 100% 
+            width: 2px 
+            position: relative
+            z-index: 0
+            &::after,&::before
+                content: ''
+                top: 0px 
+            &::after
+                width: 1px 
+                left: 50% 
+                transform: translateX(-50%) 
+                height: 100%
+                position: absolute
+                z-index: -1
+                background-color: white
+            &::before 
+                left: 0px 
+                height: 100% 
+                width: 100%
+                display: block
+                background-image: linear-gradient(to top, white 25%, transparent 25%, transparent 35%, white 35%, white 60%, transparent 60%, transparent 70%, white 70%)
+                background-position: 50% 100%
+                background-size: 100% 300%
+                animation-name: scrollEf
+                animation-duration: 3s 
+                animation-iteration-count: infinite
+                animation-timing-function: linear
+        &-text 
+            color: white 
+            writing-mode: vertical-lr
+            margin-left: 2px
+            cursor: pointer
+            display: block
+            width: 20px
+    &-buffer,&-banner
+        width: 100%
+        padding-top: 60px
+        +m()
+            max-height: 600px
+            height: 100%
+    &-buffer 
+        position: relative
+        z-index: 0 
+    &-content 
+        position: absolute 
+        bottom: 0px 
+        left: 30px
+        width: 100%
+        max-width: 1300px 
+        width: 100% 
+        padding: 0px 20px 40px
+        height: 280px
+        +m()
+            left: 0px
+            display: flex 
+            justify-content: flex-end
+            height: 210px
+        .wrap-img
+            display: block
+            padding: 15px
+            +m()
+                padding: 10px 15px
+        .block1 
+            max-width: 378px
+            width: 38%
+            +m()
+                // width: 30%
+                min-width: 243px
+        .block2 
+            margin-top: 15px
+            max-width: 415px 
+            width: 42%
+            +m()
+                // width: 34%
+                margin-top: 10px
+                min-width: 280px
+        .block3 
+            border: 1px solid white
+            padding: 12px 15px 
+            background-color: rgba(black, 0.5)
+            margin-top: 20px
+            max-width: 250px
+            width: 26%
+            +m()
+                // width: 18%
+                margin-top: 15px
+                min-width: 115px
+    &-title
+        +m()
+            max-width: 670px
+            width: 100%
+    &-h2
+        span 
+            background-color: white
+    &-container
+        max-height: calc(100vh - 70px)
+        width: 100%
+        min-height: 600px
+        min-height: clamp(450px, 60vw, 600px)
+        // +t()
+        //     max-width: clamp(1px, 90vw, 100%)
+        // +m()
+        //     max-width: 100%
+        //     max-height: 100%
+        //     height: calc(100vh - 60px)
+        //     min-height: 400px
+        &::after
+            content: ''
+            display: block 
+            width: 100%
+            padding-bottom: 51.6%
+    &-banner
+        position: fixed 
+        top: 0px 
+        display: flex 
+        justify-content: flex-end
+        left: 0px 
+        z-index: -1
+        .banner
+            background-image: url(../images/top/img_banner.jpg)
+            background-repeat: no-repeat
+            background-size: cover
+            background-position: center center
+            +m()
+                background-position: 40% 50%
+.news
+    &-content
+        display: flex
+        justify-content: flex-end
+    &-inner
+        max-width: calc(100% - 200px)
+        width: 100%
+        max-width: calc(100% - clamp(80px, 18vw, 200px))
+        +m()
+            max-width: 100%
+            margin-top: 40px
+        a
+            width: 100%
+            border-bottom: 1px solid #E6E6E6
+        dl
+            display: flex
+            justify-content: flex-start
+            align-items: center
+            padding: 30px 0px
+            max-width: 925px
+            position: relative
+            &::after 
+                content: ''
+                display: block
+                height: 0px 
+                width: 0px 
+                border-top: 4px solid transparent
+                border-left: 8px solid black
+                border-bottom: 4px solid transparent
+                margin-left: 5px
+                margin-right: 5px
+                +m()
+                    margin-top: 20px
+            +m()
+                padding: 0px
+                align-items: flex-start
+            &::after
+                content: ''
+                height: 0px
+                width: 0px
+                right: 0px
+                position: absolute
+        dt
+            margin-right: 25px
+            +m()
+                margin: 15px 0px
+                margin-right: 20px
+        .text-news
+            display: flex
+            align-items: center
+            +m()
+                flex-wrap: wrap
+                margin: 5px 0px 15px
+                &>*
+                    margin: 10px 20px 10px 0px
+                
+
+.about
+    &-lists
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    &-list
+        max-width: calc(100%/4 - 15px)
+        width: 100%
+        margin-bottom: 62px
+        +t()
+            max-width: 100%
+            width: auto
+            margin: 0px auto 30px
+            padding: 0px 5px
+        &.none
+            height: 0px
+            margin-bottom: 0px
+            +t()
+                width: 276px
+    &-img
+        position: relative
+        z-index: 0
+        &-second
+            img
+                position: absolute
+                top: 50%
+                left: 50%
+                z-index: 1
+                transform: translate(-50%, -50%)
+    &-caption
+        margin-top: 15px
+.business
+    padding-top: 70px
+    +m()
+        padding-top: 40px
+    &-link
+        max-width: calc(50% - 10px)
+        +m()
+            max-width: 100%
+            margin-right: auto
+            margin-left: auto
+            &:last-of-type
+                margin-top: 30px
+.balance
+    &-link
+        max-width: calc(100%/3 - 13.3px)
+        +m()
+            max-width: calc(50% - 20px)
+            margin: auto
+            min-width: 280px
+            &:not(:last-of-type)
+                margin-bottom: 30px
+    &-wrap 
+        +m()
+            &::after
+                display: block 
+                content: ''
+                width: 100% 
+                max-width: calc(50% - 10px)
+                height: 0px
+                margin: auto
+.balance,.business
+    &-link
+        width: 100%
+        position: relative
+        +m()
+            width: auto
+    &-wrap
+        display: flex
+        justify-content: space-between
+        +m()
+            flex-wrap: wrap
+            align-items: flex-start
+    &-content
+        position: absolute
+        z-index: 1
+        top: 0px
+        left: 0px
+        width: 100%
+        height: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        color: white
+        p
+            margin-top: 10px
+.people
+    +CSSIE()
+        overflow: hidden
+    &-inner
+        position: relative
+        z-index: 0 
+    &-bttn 
+        position: absolute 
+        top: 50%
+        width: 100%
+        max-width: calc(50% - 485px)
+        min-width: 20px
+        &.right
+            right: 0px
+            button 
+                right: 100%
+                &::after, &::before 
+                    border-left: 7px solid white
+        &.left 
+            left: 0px
+            button 
+                left: 100%
+                &::after, &::before 
+                    border-right: 7px solid white
+        button 
+            width: 50px 
+            height: 50px 
+            border-radius: 50% 
+            background-color: #008FD4
+            display: flex 
+            align-items: center 
+            justify-content: center
+            position: absolute 
+            top: 0px
+            transform: translateY(-50%)
+            &::after, &::before 
+                content: ''
+                display: block
+                height: 0px 
+                width: 0px
+                border-bottom: 4px solid transparent
+                border-top: 4px solid transparent
+            &::before 
+                margin-right: 2px
+        .bttn-wrap 
+            position: relative
+            width: 100%
+    &-show
+        max-width: 1160px
+        width: 100% 
+        margin: 0px auto
+        padding: 0px 35px
+        +m()
+            padding: 0px
+    &-slider
+        max-width: 930px 
+        width: 100% 
+        +m()
+            max-width: 450px
+            margin: 0px auto
+        .slick-list
+            overflow: visible
+            width: 200%
+        &-inner
+            width: 100%
+            display: flex !important
+            justify-content: flex-end
+            position: relative
+            z-index: 0 
+            +m()
+                padding: 10px 20px
+            &::after
+                +psuedoDefault(0px )
+                z-index: 1
+                background-color: rgba(white, 0.5)
+                visibility: visible
+                opacity: 1
+                transition: all 0.3s ease 
+            &.active 
+                &::after
+                    visibility: hidden 
+                    opacity: 0
+            .icon-add
+                left: 0px 
+                position: absolute 
+                height: 11px
+                width: 11px 
+                z-index: 2
+                &::after,&::before 
+                    content: ''
+                    background-color: black 
+                    width: 100%
+                    left: 0px 
+                    position: absolute 
+                    top: calc(50% - 0.5px)
+                    height: 1px 
+                &::before 
+                    transform: rotate(90deg)
+                &.top 
+                    top: 0px 
+                    transform: translate(-50%, -50%)
+                &.bottom 
+                    bottom: 0px 
+                    transform: translate(-50%, 50%)
+        &-wrap
+            max-width: 770px
+            width: 100%
+            display: flex 
+            justify-content: space-between
+            align-items: center
+            +m()
+                display: block
+                a
+                    width: 100%
+    &-link
+        position: relative
+        margin-right: 20px
+        z-index: 0
+    &-content
+        max-width: 300px
+        width: 100%
+        height: 220px
+        max-height: 100% 
+        display: flex 
+        align-items: flex-start
+        flex-direction: column
+        justify-content: space-between
+        +m()
+            max-width: 100%
+            height: auto
+            margin-top: 20px
+            .text-box-color
+                margin-bottom: 15px
+            p
+                margin-top: 15px
+            .text-sign
+                margin-top: 15px
+                font-size: 1.8rem
+        h4 
+            line-height: 1.8
+            +m()
+                font-size: 1.6rem !important
+                line-height: 1.6
+
+footer
+    position: relative
+    z-index: 2 
+    overflow: hidden
+    &::after
+        content: ''
+        top: -150px
+        left: 0px 
+        bottom: -100px 
+        position: absolute
+        right: 0px 
+        z-index: -1 
+        background-color: white
+
+
++m()
+    .libary-css 
+        .p-top140
+            padding-top: 70px
+        .p-bot140
+            padding-bottom: 70px
+        .m-b105
+            margin-bottom: 60px

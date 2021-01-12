@@ -1,0 +1,167 @@
+
+=t()
+    @media screen and ( max-width: 1024px )
+        @content
+=m()
+    @media screen and ( max-width: 767px )
+        @content
+=mediaCustom($media)
+    @media screen and ( max-width: $media )
+        @content
+=mediaMin($media)
+    @media screen and ( min-width: $media )
+        @content
+=CSSIE()
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active)
+        @content
+
+=psuedoDefault($value)
+    content: ''
+    position: absolute
+    top: $value
+    right: $value
+    bottom: $value
+    left: $value
+=absoluteDefault($value)
+    position: absolute
+    top: $value
+    right: $value
+    bottom: $value
+    left: $value
+
+=fontFn($fontFamily, $fontSize, $color)
+    @if $fontFamily
+        font-family: $fontFamily, sans-serif
+    @if $fontSize 
+        font-size: $fontSize
+    @if $color 
+        color: $color
+
+=LoopPickColor($color...)
+    @for $var from 0 to length($color)
+        &:nth-of-type(#{$var + 1})
+            background-color: nth($color, $var + 1)
+=fontSizeMobile($font)
+    +mobile()
+        font-size: $font
+        
+=LoopPickColor2($color...)
+    &__container
+        @for $var from 0 to length($color)
+            &:nth-of-type(#{$var + 1})
+                .modal__title
+                    background-color: nth($color, $var + 1)
+                .modal__content
+                    & > span 
+                        color: nth($color, $var + 1)
+=gradient($color) 
+    background-image: linear-gradient(to right, transparent 20%, rgba($color, 0.25) 20%, rgba($color, 0.25) 40%, rgba($color, 0.5) 40%, rgba($color, 0.5) 60%, rgba($color, 0.75) 60%, rgba($color, 0.75) 80%, $color 80%)
+    background-size: 500%
+    background-position: 100% 50%
+=gradient2($color)
+    background-image: linear-gradient(to right, transparent 40%, rgba(white, 0.6) 50%, $color 60%)
+    background-size: 300%
+    background-position: 100% 50%
+=f_lv24
+    font-size: 2.4rem 
+    letter-spacing: 0.1rem
+=f_lv18 
+    font-size: 1.8rem 
+    letter-spacing: 0.2rem
+=f_lv16
+    font-size: 1.6rem 
+    letter-spacing: 0.15rem
+=title_h3
+    color: #1f1f1f
+    font-weight: bold
+    line-height: 1.6
+    font-size: 2.4rem
+    margin-bottom: 60px
+    +m()
+        font-size: 2rem
+=title_h4 
+    color: inherit 
+    font-weight: bold
+    font-size: 1.8rem 
+    letter-spacing: 0.1rem
+    line-height: 1.4
+=flex_wrap
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+=style-p 
+    line-height: 1.8 
+    letter-spacing: 0.1rem
+
+=commonPeople
+    &-list 
+        margin: 130px 0px 0px
+        display: flex 
+        flex-wrap: wrap
+        justify-content: space-between
+    &-per 
+        max-width: calc(50% - 15px)
+        width: 100% 
+        margin-bottom: 85px
+        figure 
+            position: relative
+        &:nth-child(1)
+            span:not(.text-under)
+                width: 175px
+        &:nth-child(2)
+            span:not(.text-under)
+                width: 310px
+        &:nth-child(3)
+            span:not(.text-under)
+                width: 230px
+        &:nth-child(4)
+            span:not(.text-under)
+                width: 270px
+        span:not(.text-under)
+            position: absolute 
+            display: block 
+            bottom: 0px 
+            transform: translateY(50%)
+            left: 0px 
+            line-height: 3rem 
+            font-weight: bold
+            text-align: center
+            color: white 
+            overflow: hidden
+            &::after 
+                +psuedoDefault(0px)
+                background-color: $colorDefault
+                transform-origin: right top 
+                transform: skewX(-30deg)
+                z-index: -1
+        &>* 
+            max-width: 480px 
+            width: 100%
+            margin: 0px auto
+    &-content 
+        background-color: white
+        padding: 35px 50px 40px 40px
+        // height: 180px
+        dl 
+            display: flex 
+            justify-content: space-between
+            dt 
+                @extend %_f20W 
+                max-width: 310px
+            dd 
+                font-weight: bold
+                height: 35px 
+                min-width: 35px
+                width: 35px 
+                border: 2px solid #333333
+                display: flex 
+                align-items: center 
+                justify-content: center
+                margin-top: 5px
+        .text-under 
+            font-size: 1.4rem 
+            display: block 
+            line-height: 1 
+            text-align: right
+            margin-top: 25px
+            opacity: 0.6

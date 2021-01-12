@@ -1,0 +1,49 @@
+.libary-css img {
+    width: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.libary-css a {
+    color: inherit;
+    display: block;
+    -webkit-transition: all .3s ease;
+            transition: all .3s ease;
+}
+
+.libary-css a:hover {
+    opacity: .8;
+}
+
+.libary-css button {
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.libary-css button, .libary-css a, .libary-css input {
+    outline: none;
+}
+
+.libary-css .d-block {
+    display: block;
+}
+
+.libary-css .bg-white {
+    z-index: 3;
+    position: relative;
+}
+
+.libary-css .bg-white::after {
+    content: '';
+    z-index: -1;
+    background-color: white;
+    top: 0;
+    bottom: -2px;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+/*# sourceMappingURL=sourcemap/about.css.map */

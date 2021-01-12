@@ -1,0 +1,43 @@
+@import ../Abstract/__variables
+@import ../Abstract/__extend
+@import ../Abstract/__mixin
+@import ../Layout/__common
+
+.company 
+    &-lists 
+        display: flex 
+        align-items: flex-start 
+        justify-content: space-between
+        flex-wrap: wrap
+    &-list
+        max-width: calc(100%/3 - 13.3px)
+        width: 100%
+        margin-bottom: 45px
+        +m()
+            max-width: calc(50% - 10px)
+            margin: 0px auto 30px
+            padding: 0px 5px
+            min-width: 280px
+        a 
+            position: relative
+    &-content 
+        margin-top: 20px
+        +m()
+            margin-top: 10px
+        .text-en 
+            line-height: 1.4
+        p 
+            margin-top: 15px
+            +m()
+                margin-top: 8px
+    .break-sp
+        +t()
+            display: none
+.footer
+    margin-top: 90px
+    +m()
+        margin-top: 30px
+.libary-css
+    .font24 
+        +m()
+            font-size: 2rem
