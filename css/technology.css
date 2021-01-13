@@ -39,4 +39,88 @@
   justify-content: space-between;
 }
 
+.design .design-two-button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.design .design-two-button a {
+  width: 100%;
+  max-width: 49rem;
+  height: 7.6rem;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+  font-size: 1.4rem;
+  position: relative;
+  letter-spacing: 0.1rem;
+}
+.design .design-two-button a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-top-color: #72D1FF;
+  top: 50%;
+  right: 30px;
+}
+.design .design-two-button a span {
+  font-family: "Sen", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.icon {
+  position: absolute;
+  display: block;
+}
+.icon.plus {
+  width: 10px;
+  height: 1px;
+  background-color: #000;
+}
+.icon.plus::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #000;
+  transform: rotate(90deg);
+}
+
+.decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.project-box {
+  background-color: #F4F8FA;
+  position: relative;
+  padding: 5rem;
+}
+.project-box .project-title {
+  font-size: 2rem;
+  color: #3C5267;
+  font-weight: 500;
+}
+.project-box .flex-box .wrap-item {
+  width: 100%;
+  max-width: 281px;
+}
+.project-box .flex-box .wrap-item figure figcaption {
+  font-size: 1.4rem;
+  color: #000;
+}
+.project-box .flex-box .wrap-item figure figcaption.text-color {
+  color: #008FD4;
+}
+
 /*# sourceMappingURL=technology.css.map */

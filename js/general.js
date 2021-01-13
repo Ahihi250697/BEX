@@ -94,9 +94,11 @@ _menuItem.on('mouseenter', function() {
 _navLink.on('click', function(event) {
     event.preventDefault();
     let _w = $(this).innerWidth();
-    if (event.offsetX < _w - 40) {
+    let _ww = $(window).innerWidth();
+    console.log(_ww)
+    if (event.offsetX < _w - 40 || _ww > 1024) {
         window.location = $(this).attr('href');
-        console.log('asds');
+
     } else {
         if (!$(this).parent().hasClass('active')) {
             $(this).parent().addClass('active');
