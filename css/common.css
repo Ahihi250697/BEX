@@ -378,13 +378,14 @@ body>main {
     left: 0;
     right: 0;
     text-align: center;
-    transform: translateY(-50%);
+    transform: translateY(-95%);
 }
 
 .hero figure figcaption h2 {
     font-size: 1.8rem;
     color: #fff;
     line-height: 1.4;
+    letter-spacing: 2px;
     font-weight: 500;
 }
 
@@ -392,6 +393,7 @@ body>main {
     font-family: "Sen", sans-serif;
     font-weight: 700;
     font-size: 5rem;
+    letter-spacing: 0;
     display: block;
 }
 
@@ -412,7 +414,7 @@ body>main {
 
 .cm-title .title {
     font-family: "Sen", sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 3.8rem;
     color: #000;
     text-transform: uppercase;
@@ -458,7 +460,7 @@ body>main {
 }
 
 .other {
-    width: 1164px;
+    width: 1000px;
     max-width: 100%;
     margin: 0 auto;
 }
@@ -483,7 +485,7 @@ body>main {
 .other-container .other-box {
     width: 100%;
     max-width: calc(50% - 12px);
-    margin-top: 2.4rem;
+    margin-top: 4rem;
     transition: all 0.3s ease;
 }
 
