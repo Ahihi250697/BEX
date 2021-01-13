@@ -476,6 +476,10 @@ body>main {
     justify-content: space-between;
 }
 
+.other-container.center {
+    justify-content: center;
+}
+
 .other-container .other-box {
     width: 100%;
     max-width: calc(50% - 12px);

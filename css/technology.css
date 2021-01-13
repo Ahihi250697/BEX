@@ -115,6 +115,9 @@
   width: 100%;
   max-width: 281px;
 }
+.project-box .flex-box .wrap-item.item--2 {
+  max-width: 436px;
+}
 .project-box .flex-box .wrap-item figure figcaption {
   font-size: 1.4rem;
   color: #000;
