@@ -23,8 +23,13 @@ body>main {
 }
 
 @font-face {
-    font-family: HiraginoSans, sans-serif;
+    font-family: HiraginoSansW6, sans-serif;
     src: url("../assets/plugins/fonts/HiraginoSansGBW6.otf");
+}
+
+@font-face {
+    font-family: HiraginoSansW3, sans-serif;
+    src: url("../assets/plugins/fonts/HiraginoSansGBW3.otf");
 }
 
 .nav {
