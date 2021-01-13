@@ -6,10 +6,6 @@ mixin head(css, fonts)
 		include ../components/__fonts.pug
 
 mixin meta()
-	if titlePage == '株式会社BEX'
-		- titleLink= titlePage
-	else
-		- titleLink= titlePage + ' | 株式会社BEX'
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="format-detection" content="telephone=no, address=no, email=no">
@@ -19,9 +15,16 @@ mixin meta()
 	<meta property="og:image" content="#{path}images/common/icon_rel.svg">
 	<meta property="og:site_name" content="">
 	<meta property="og:title" content="">
-	<meta property="og:description" content="#{titleLink}、自動車設計・システム開発の分野において、顧客企業の良きビジネスパートナーとして信頼いただけるアウトソーシング企業をめざして展開しています。">
-	<meta name="keywords" content="自動車設計,システム開発,アウトソーシング,技術派遣,技術者,設計,開発,エンジニア,機械設計,ソリューション,採用">
-	<meta name="description" content="#{titleLink}、自動車設計・システム開発の分野において、顧客企業の良きビジネスパートナーとして信頼いただけるアウトソーシング企業をめざして展開しています。">
+	if titlePage == '株式会社BEX'
+		- titleLink= titlePage
+		<meta property="og:description" content="株式会社BEXは、愛知県内で自動車の設計開発とシステム開発に特化したエンジニアリング企業です">
+		<meta name="keywords" content="自動車設計,システム開発,アウトソーシング,技術派遣,技術者,設計,開発,エンジニア,機械設計,ソリューション,採用">
+		<meta name="description" content="株式会社BEXは、愛知県内で自動車の設計開発とシステム開発に特化したエンジニアリング企業です">
+	else
+		- titleLink= titlePage + ' | 株式会社BEX'
+		<meta property="og:description" content="#{titleLink}、自動車設計・システム開発の分野において、顧客企業の良きビジネスパートナーとして信頼いただけるアウトソーシング企業をめざして展開しています。">
+		<meta name="keywords" content="自動車設計,システム開発,アウトソーシング,技術派遣,技術者,設計,開発,エンジニア,機械設計,ソリューション,採用">
+		<meta name="description" content="#{titleLink}、自動車設計・システム開発の分野において、顧客企業の良きビジネスパートナーとして信頼いただけるアウトソーシング企業をめざして展開しています。">
 	<meta name="title" content="">
 	<link rel="icon" href="#{path}images/common/icon_rel.svg">
 
