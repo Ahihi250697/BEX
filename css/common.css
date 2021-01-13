@@ -23,8 +23,13 @@ body>main {
 }
 
 @font-face {
-    font-family: HiraginoSans, sans-serif;
+    font-family: HiraginoSansW6, sans-serif;
     src: url("../assets/plugins/fonts/HiraginoSansGBW6.otf");
+}
+
+@font-face {
+    font-family: HiraginoSansW3, sans-serif;
+    src: url("../assets/plugins/fonts/HiraginoSansGBW3.otf");
 }
 
 .nav {
@@ -413,6 +418,10 @@ body>main {
     text-transform: uppercase;
     line-height: 0.9;
     display: block;
+}
+
+.cm-title .title.font-weight-bold {
+    font-weight: 700;
 }
 
 .cm-title .title:first-letter {
