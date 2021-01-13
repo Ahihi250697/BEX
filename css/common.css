@@ -838,7 +838,7 @@ body>main {
 }
 
 .inview {
-    transition-property: all;
+    transition-property: transform, opacity;
     transition-duration: 0.8s;
     transition-timing-function: cubic-bezier(0.03, 0.57, 0.48, 1.02);
     opacity: 1;
@@ -857,5 +857,10 @@ body>main {
 
 .fadeDown {
     transform: translate3d(0px, -100px, 0);
+    opacity: 0;
+}
+
+.fadeRight {
+    transform: translate3d(-100px, 0px, 0);
     opacity: 0;
 }

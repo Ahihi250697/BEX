@@ -3,7 +3,7 @@
     @media screen and ( max-width: 1024px )
         @content
 =m()
-    @media screen and ( max-width: 767px )
+    @media screen and ( max-width: 768px )
         @content
 =mediaCustom($media)
     @media screen and ( max-width: $media )
@@ -32,9 +32,9 @@
 =fontFn($fontFamily, $fontSize, $color)
     @if $fontFamily
         font-family: $fontFamily, sans-serif
-    @if $fontSize 
+    @if $fontSize
         font-size: $fontSize
-    @if $color 
+    @if $color
         color: $color
 
 =LoopPickColor($color...)
@@ -43,8 +43,8 @@
             background-color: nth($color, $var + 1)
 =fontSizeMobile($font)
     +mobile()
-        font-size: $font
-        
+    font-size: $font
+
 =LoopPickColor2($color...)
     &__container
         @for $var from 0 to length($color)
@@ -52,9 +52,9 @@
                 .modal__title
                     background-color: nth($color, $var + 1)
                 .modal__content
-                    & > span 
+                    & > span
                         color: nth($color, $var + 1)
-=gradient($color) 
+=gradient($color)
     background-image: linear-gradient(to right, transparent 20%, rgba($color, 0.25) 20%, rgba($color, 0.25) 40%, rgba($color, 0.5) 40%, rgba($color, 0.5) 60%, rgba($color, 0.75) 60%, rgba($color, 0.75) 80%, $color 80%)
     background-size: 500%
     background-position: 100% 50%
@@ -63,13 +63,13 @@
     background-size: 300%
     background-position: 100% 50%
 =f_lv24
-    font-size: 2.4rem 
+    font-size: 2.4rem
     letter-spacing: 0.1rem
-=f_lv18 
-    font-size: 1.8rem 
+=f_lv18
+    font-size: 1.8rem
     letter-spacing: 0.2rem
 =f_lv16
-    font-size: 1.6rem 
+    font-size: 1.6rem
     letter-spacing: 0.15rem
 =title_h3
     color: #1f1f1f
@@ -78,32 +78,32 @@
     font-size: 2.4rem
     margin-bottom: 60px
     +m()
-        font-size: 2rem
-=title_h4 
-    color: inherit 
+    font-size: 2rem
+=title_h4
+    color: inherit
     font-weight: bold
-    font-size: 1.8rem 
+    font-size: 1.8rem
     letter-spacing: 0.1rem
     line-height: 1.4
 =flex_wrap
     display: flex
     flex-wrap: wrap
     justify-content: space-between
-=style-p 
-    line-height: 1.8 
+=style-p
+    line-height: 1.8
     letter-spacing: 0.1rem
 
 =commonPeople
-    &-list 
+    &-list
         margin: 130px 0px 0px
-        display: flex 
+        display: flex
         flex-wrap: wrap
         justify-content: space-between
-    &-per 
+    &-per
         max-width: calc(50% - 15px)
-        width: 100% 
+        width: 100%
         margin-bottom: 85px
-        figure 
+        figure
             position: relative
         &:nth-child(1)
             span:not(.text-under)
@@ -118,50 +118,55 @@
             span:not(.text-under)
                 width: 270px
         span:not(.text-under)
-            position: absolute 
-            display: block 
-            bottom: 0px 
+            position: absolute
+            display: block
+            bottom: 0px
             transform: translateY(50%)
-            left: 0px 
-            line-height: 3rem 
+            left: 0px
+            line-height: 3rem
             font-weight: bold
             text-align: center
-            color: white 
+            color: white
             overflow: hidden
-            &::after 
+            &::after
                 +psuedoDefault(0px)
                 background-color: $colorDefault
-                transform-origin: right top 
+                transform-origin: right top
                 transform: skewX(-30deg)
                 z-index: -1
-        &>* 
-            max-width: 480px 
+        &>*
+            max-width: 480px
             width: 100%
             margin: 0px auto
-    &-content 
+    &-content
         background-color: white
         padding: 35px 50px 40px 40px
         // height: 180px
-        dl 
-            display: flex 
+        dl
+            display: flex
             justify-content: space-between
-            dt 
-                @extend %_f20W 
+            dt
+                @extend %_f20W
                 max-width: 310px
-            dd 
+            dd
                 font-weight: bold
-                height: 35px 
+                height: 35px
                 min-width: 35px
-                width: 35px 
+                width: 35px
                 border: 2px solid #333333
-                display: flex 
-                align-items: center 
+                display: flex
+                align-items: center
                 justify-content: center
                 margin-top: 5px
-        .text-under 
-            font-size: 1.4rem 
-            display: block 
-            line-height: 1 
+        .text-under
+            font-size: 1.4rem
+            display: block
+            line-height: 1
             text-align: right
             margin-top: 25px
             opacity: 0.6
+=maxImg($value, $class)
+    @for $var from 1 through length($value)
+        &:nth-child(#{$var})
+            #{$class}
+                max-width: #{nth($value, $var)}px

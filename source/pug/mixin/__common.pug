@@ -1,13 +1,15 @@
 mixin head(css, fonts)
 	each val in css
 		<link href="#{path + val}" rel="stylesheet">
-	title= titlePage
+	title= titleLink
 	if fonts
 		include ../components/__fonts.pug
 
 mixin meta()
-	if titlePage != '株式会社BEX'
-		- titlePage= titlePage + ' | 株式会社BEX'
+	if titlePage == '株式会社BEX'
+		- titleLink= titlePage
+	else
+		- titleLink= titlePage + ' | 株式会社BEX'
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="format-detection" content="telephone=no, address=no, email=no">
@@ -17,9 +19,9 @@ mixin meta()
 	<meta property="og:image" content="#{path}images/common/icon_rel.svg">
 	<meta property="og:site_name" content="">
 	<meta property="og:title" content="">
-	<meta property="og:description" content="#{titlePage}、自動車設計・システム開発の分野において、顧客企業の良きビジネスパートナーとして信頼いただけるアウトソーシング企業をめざして展開しています。">
+	<meta property="og:description" content="#{titleLink}、自動車設計・システム開発の分野において、顧客企業の良きビジネスパートナーとして信頼いただけるアウトソーシング企業をめざして展開しています。">
 	<meta name="keywords" content="自動車設計,システム開発,アウトソーシング,技術派遣,技術者,設計,開発,エンジニア,機械設計,ソリューション,採用">
-	<meta name="description" content="#{titlePage}、自動車設計・システム開発の分野において、顧客企業の良きビジネスパートナーとして信頼いただけるアウトソーシング企業をめざして展開しています。">
+	<meta name="description" content="#{titleLink}、自動車設計・システム開発の分野において、顧客企業の良きビジネスパートナーとして信頼いただけるアウトソーシング企業をめざして展開しています。">
 	<meta name="title" content="">
 	<link rel="icon" href="#{path}images/common/icon_rel.svg">
 
@@ -41,7 +43,7 @@ mixin js(js)
 		<script src="#{path + val}"></script>
 
 mixin blockCommon(golink, textEn, textNihon)
-	<section class="external-link">
+	<section class="external-link inview fadeRight">
 		<div class="container-low">
 			<a href="#{path + golink}" class="external-link__block">
 				<h2>#{textEn}<br>

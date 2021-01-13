@@ -15,7 +15,7 @@ html(lang="ja")
 		main.main
 			+bannerChild('about', 'ABOUT')
 			.libary-css(class= surClass)
-			div(class= surClass + '-lineHead')
+			div(class= surClass + '-lineHead inview fadeUp')
 				.container-low
 					p ダミーです1980年の創業以来、エンジニアリング企業として技術サービスを提供してまいりました。近年では、プロジェクト単位で開発業務を任せて頂けるようになり、お客様からの信頼も向上していると実感をしております。これもひとえに社員一人一人の実績が信頼となって実を結び始めた結果だと実感しています。
 			.container-low
@@ -55,6 +55,6 @@ html(lang="ja")
 					])
 			+blockCommon('#', 'Business', '人材力と技術領域')
 		+footer()
-		+js(['assets/js/jquery-3.5.1.min.js', 'js/scrollView.js', 'js/general.js'])
+		+js(['assets/js/jquery-3.5.1.min.js', 'js/scrollView.js', 'js/general.js', 'js/about.js'])
 
 

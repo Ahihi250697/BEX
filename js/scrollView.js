@@ -28,7 +28,7 @@
     return curtop;
   }
   let count = -1,
-      ArrayClass = ['fadeUp', 'fadeLeft', 'fadeDown'],
+      ArrayClass = ['fadeUp', 'fadeLeft', 'fadeDown', 'fadeRight'],
       offsetCheck = 0;
   function checkClass(ele, mapClass, offset) {
     for(let i = 0; i <= mapClass.length - 1; i++) {
