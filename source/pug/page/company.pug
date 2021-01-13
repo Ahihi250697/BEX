@@ -1,0 +1,16 @@
+include ../mixin/__common.pug
+include ../mixin/__company.pug
+include ../components/__variables.pug
+
+- var path = '../'
+- var titlePage = '企業情報'
+doctype html
+html
+	head 
+		+meta()
+		+head(['assets/css/reset.css', 'assets/css/bootstrap_custom.css', 'css/common.css', 'css/common-low.css', 'css/company.css'], true )
+	body
+		+header()
+		+contents()
+		+footer()
+		+js(['assets/js/jquery-3.5.1.min.js', 'js/scrollView.js', 'js/general.js'])
