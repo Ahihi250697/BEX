@@ -415,6 +415,10 @@ body>main {
     display: block;
 }
 
+.cm-title .title.font-weight-bold {
+    font-weight: 700;
+}
+
 .cm-title .title:first-letter {
     color: #008FD4;
 }
