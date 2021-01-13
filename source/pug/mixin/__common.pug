@@ -1,14 +1,13 @@
 mixin head(css, fonts)
 	each val in css
 		<link href="#{path + val}" rel="stylesheet">
-	if titlePage == '株式会社BEX'
-		title= titlePage
-	else 
-		title= titlePage + ' | 株式会社BEX'
+	title= titlePage
 	if fonts
 		include ../components/__fonts.pug
 
 mixin meta()
+	if titlePage != '株式会社BEX'
+		- titlePage= titlePage + ' | 株式会社BEX'
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="format-detection" content="telephone=no, address=no, email=no">
@@ -18,9 +17,9 @@ mixin meta()
 	<meta property="og:image" content="#{path}images/common/icon_rel.svg">
 	<meta property="og:site_name" content="">
 	<meta property="og:title" content="">
-	<meta property="og:description" content="#{titlePage}｜株式会社BEXは、自動車設計・システム開発の分野において、顧客企業の良きビジネスパートナーとして信頼いただけるアウトソーシング企業をめざして展開しています。">
+	<meta property="og:description" content="#{titlePage}、自動車設計・システム開発の分野において、顧客企業の良きビジネスパートナーとして信頼いただけるアウトソーシング企業をめざして展開しています。">
 	<meta name="keywords" content="自動車設計,システム開発,アウトソーシング,技術派遣,技術者,設計,開発,エンジニア,機械設計,ソリューション,採用">
-	<meta name="description" content="#{titlePage}｜株式会社BEXは、自動車設計・システム開発の分野において、顧客企業の良きビジネスパートナーとして信頼いただけるアウトソーシング企業をめざして展開しています。">
+	<meta name="description" content="#{titlePage}、自動車設計・システム開発の分野において、顧客企業の良きビジネスパートナーとして信頼いただけるアウトソーシング企業をめざして展開しています。">
 	<meta name="title" content="">
 	<link rel="icon" href="#{path}images/common/icon_rel.svg">
 
@@ -76,10 +75,16 @@ mixin header()
 						<a class="nav-link" href="#">職場環境</a>
 					</li>
 					<li class="menu-item drop-menu">
-						<a class="nav-link" href="#">エンジニア紹介</a>
+						<a class="nav-link" href="#{path}interview/">エンジニア紹介</a>
+						<div class="sub-menu">
+							<a href="#{path}interview/01/">People.01</a>
+							<a href="#{path}interview/02/">People.02</a>
+							<a href="#{path}interview/03/">People.03</a>
+							<a href="#{path}interview/04/">People.04</a>
+						</div>
 					</li>
 					<li class="menu-item drop-menu">
-						<a class="nav-link" href="#">採用情報</a>
+						<a class="nav-link" href="#{path}recruit/">採用情報</a>
 						<div class="sub-menu">
 							<a href="#">新卒募集要項</a>
 							<a href="#">中途募集要項</a>
@@ -143,7 +148,7 @@ mixin footer()
 						</div>
 						<div class="item cm-title">
 							<span class="title">
-								business
+								| business
 							</span>
 							<ul>
 								<li class="main-title">
@@ -160,7 +165,7 @@ mixin footer()
 
 						<div class="item cm-title">
 							<span class="title">
-								pEOPLE
+								| PEOPLE
 							</span>
 							<ul>
 								<li class="main-title">
