@@ -82,10 +82,10 @@
     margin-bottom: 80px;
 }
 
-.about-lineHead {
+/* .about-lineHead {
     padding-bottom: 120px;
     border-bottom: 1px solid #e6e6e6;
-}
+} */
 
 .about-lineHead p {
     max-width: 815px;
@@ -226,6 +226,7 @@
     width: 82px;
     background-color: black;
     color: #72d1ff;
+    font-family: 'Sen', sans-serif;
 }
 
 .about-index strong {
@@ -288,6 +289,9 @@
     z-index: -1;
 }
 
+.about-lineHead {
+    font-weight: bold;
+}
 .about-line::before {
     height: 2px;
     z-index: 1;
@@ -308,9 +312,9 @@
     .hero {
         margin-bottom: 50px;
     }
-    .about-lineHead {
+    /* .about-lineHead {
         padding-bottom: 60px;
-    }
+    } */
     .about-lists {
         margin-top: 70px;
     }
