@@ -1,0 +1,73 @@
+.bex-engineer__chart {
+  background-color: #F4F8FA;
+  padding: 80px 0;
+  margin: 140px auto 150px;
+  position: relative;
+  z-index: 0; }
+  .bex-engineer__chart figure {
+    max-width: calc(100% - 260px);
+    width: 100%;
+    margin: auto; }
+  .bex-engineer__chart::before {
+    content: '+';
+    position: absolute;
+    z-index: -1;
+    top: -6px;
+    left: -4px;
+    line-height: 0.7; }
+  .bex-engineer__chart::after {
+    content: '+';
+    position: absolute;
+    z-index: -1;
+    top: -6px;
+    right: -4px;
+    line-height: 0.7; }
+  .bex-engineer__chart--decord {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+    .bex-engineer__chart--decord::before {
+      content: '+';
+      position: absolute;
+      z-index: -1;
+      bottom: -4px;
+      left: -4px;
+      line-height: 0.7; }
+    .bex-engineer__chart--decord::after {
+      content: '+';
+      position: absolute;
+      z-index: -1;
+      bottom: -4px;
+      right: -4px;
+      line-height: 0.7; }
+  .bex-engineer__chart p {
+    font-family: HiraginoSansW6, sans-serif;
+    font-size: 1.7rem;
+    text-align: center;
+    margin-top: 55px;
+    line-height: 2; }
+.bex-engineer__detail h2 {
+  font-family: HiraginoSansW6, sans-serif;
+  font-size: 2.2rem;
+  color: #008FD4;
+  margin-bottom: 30px;
+  margin-top: 45px;
+  line-height: 1.6; }
+.bex-engineer__detail p {
+  font-family: HiraginoSansW3, sans-serif;
+  font-size: 1.4rem;
+  line-height: 2; }
+.bex-engineer__detail figure {
+  margin-top: 100px;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .bex-engineer__detail figure img {
+    max-width: 50%;
+    width: 100%; }
+
+/*# sourceMappingURL=bex-engineer.css.map */
