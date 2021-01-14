@@ -1,19 +1,4 @@
 /**************************************component************************************/
-.c-ttl01 {
-  font-size: 2.3rem;
-  color: #008FD4;
-  text-align: center;
-  margin-bottom: 30px;
-  line-height: 1.87;
-}
-@media only screen and (max-width: 767px) {
-  .c-ttl01 {
-    font-size: 1.8rem;
-    line-height: 1.7;
-    margin-bottom: 20px;
-  }
-}
-
 .p-training {
   font-family: HiraginoSans, sans-serif;
 }
@@ -93,7 +78,7 @@
 }
 .p-training__02 .container-low::before {
   content: "";
-  background: url(../images/training/img_icon03.svg) no-repeat center;
+  background: url(../images/common/img_icon03.svg) no-repeat center;
   width: 10px;
   height: 10px;
   background-size: contain;
@@ -103,7 +88,7 @@
 }
 .p-training__02 .container-low::after {
   content: "";
-  background: url(../images/training/img_icon03.svg) no-repeat center;
+  background: url(../images/common/img_icon03.svg) no-repeat center;
   width: 10px;
   height: 10px;
   background-size: contain;
@@ -168,7 +153,7 @@
 }
 .p-training__02 .content::before {
   content: "";
-  background: url(../images/training/img_icon03.svg) no-repeat center;
+  background: url(../images/common/img_icon03.svg) no-repeat center;
   width: 10px;
   height: 10px;
   background-size: contain;
@@ -178,7 +163,7 @@
 }
 .p-training__02 .content::after {
   content: "";
-  background: url(../images/training/img_icon03.svg) no-repeat center;
+  background: url(../images/common/img_icon03.svg) no-repeat center;
   width: 10px;
   height: 10px;
   background-size: contain;
@@ -232,172 +217,6 @@
 }
 .p-training .cm-title .title {
   font-weight: 700;
-}
-
-.c-listpost {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: calc(100% + 4rem);
-  margin-left: -2rem;
-  margin-bottom: 65px;
-}
-@media only screen and (max-width: 767px) {
-  .c-listpost {
-    width: calc(100% + 2rem);
-    margin-left: -1rem;
-    margin-bottom: 35px;
-  }
-}
-@media only screen and (max-width: 550px) {
-  .c-listpost {
-    width: calc(100% + 2rem);
-    margin-bottom: 20px;
-  }
-}
-.c-listpost > .ttl {
-  font-size: 2.2rem;
-  line-height: 1.95;
-  display: block;
-  border-bottom: 1px solid #E6E6E6;
-  color: #008FD4;
-  margin-bottom: 36px;
-  width: 100%;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding-bottom: 5px;
-}
-@media only screen and (max-width: 767px) {
-  .c-listpost > .ttl {
-    font-size: 1.8rem;
-    margin-bottom: 25px;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-.c-listpost__item {
-  width: 295px;
-  background: #F4F8FA;
-  margin: 0 2rem;
-  position: relative;
-}
-@media only screen and (max-width: 767px) {
-  .c-listpost__item {
-    margin: 0 1rem;
-  }
-}
-@media only screen and (max-width: 550px) {
-  .c-listpost__item {
-    width: 100%;
-  }
-}
-.c-listpost__item .ttl {
-  font-size: 2rem;
-  color: #3C5267;
-  line-height: 1.35;
-  text-align: center;
-  margin-bottom: 30px;
-  position: relative;
-  padding: 40px 29px 0 29px;
-}
-@media only screen and (max-width: 767px) {
-  .c-listpost__item .ttl {
-    font-size: 1.6rem;
-    margin-bottom: 12px;
-    padding: 30px 15px 0 15px;
-  }
-}
-.c-listpost__item .ttl::before {
-  content: "";
-  background: url(../images/training/img_icon03.svg) no-repeat center;
-  width: 10px;
-  height: 10px;
-  background-size: contain;
-  left: -5px;
-  top: -5px;
-  position: absolute;
-}
-.c-listpost__item .ttl::after {
-  content: "";
-  background: url(../images/training/img_icon03.svg) no-repeat center;
-  width: 10px;
-  height: 10px;
-  background-size: contain;
-  right: -5px;
-  top: -5px;
-  position: absolute;
-}
-.c-listpost__item p:not(.ttl) {
-  font-size: 1.3rem;
-  line-height: 2;
-  letter-spacing: -0.6px;
-  padding: 0 29px 25px 29px;
-}
-@media only screen and (max-width: 767px) {
-  .c-listpost__item p:not(.ttl) {
-    font-size: 1.2rem;
-    padding: 0 15px 25px 15px;
-    text-align: justify;
-    letter-spacing: 0;
-  }
-}
-.c-listpost__item::before {
-  content: "";
-  background: url(../images/training/img_icon03.svg) no-repeat center;
-  width: 10px;
-  height: 10px;
-  background-size: contain;
-  left: -5px;
-  bottom: -5px;
-  position: absolute;
-}
-.c-listpost__item::after {
-  content: "";
-  background: url(../images/training/img_icon03.svg) no-repeat center;
-  width: 10px;
-  height: 10px;
-  background-size: contain;
-  right: -5px;
-  bottom: -5px;
-  position: absolute;
-}
-.c-listpost__item.img {
-  width: 326px;
-  padding: 0;
-}
-.c-listpost__item.img img {
-  width: 100%;
-}
-.c-listpost__item.img::after, .c-listpost__item.img::before {
-  display: none;
-}
-@media only screen and (max-width: 1024px) {
-  .c-listpost--img .c-listpost__item {
-    width: calc(50% - 4rem);
-  }
-}
-@media only screen and (max-width: 767px) {
-  .c-listpost--img .c-listpost__item {
-    width: calc(50% - 2rem);
-  }
-}
-@media only screen and (max-width: 550px) {
-  .c-listpost--img .c-listpost__item {
-    width: calc(100% + 2rem);
-    margin-bottom: 2rem;
-  }
-}
-@media only screen and (max-width: 1024px) {
-  .c-listpost--img .c-listpost__item.img {
-    width: 500px;
-    margin-bottom: 4rem;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .c-listpost--img .c-listpost__item.img {
-    width: calc(100% + 2rem);
-    margin-bottom: 2rem;
-  }
 }
 
 /*# sourceMappingURL=training.css.map */

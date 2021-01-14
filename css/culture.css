@@ -1,0 +1,17 @@
+/**************************************component************************************/
+.p-culture .container-low {
+  width: 1000px;
+}
+@media only screen and (max-width: 1024px) {
+  .p-culture .container-low {
+    width: 94%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .p-culture .container-low {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+/*# sourceMappingURL=culture.css.map */

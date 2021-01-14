@@ -1,6 +1,6 @@
 node_modules
 scss
-sass
+# sass
 *.scss
 gulpfile.js
 .vscode
