@@ -102,7 +102,7 @@
 }
 
 .external-link__block {
-    max-width: calc(50% - 240px);
+    max-width: 340px;
     width: 100%;
     margin-left: auto;
     margin-right: 0;
@@ -316,6 +316,257 @@
     margin-top: 2px;
 }
 
+.c-ttl01 {
+    font-size: 2.3rem;
+    color: #008FD4;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.87;
+}
+
+@media only screen and (max-width: 767px) {
+    .c-ttl01 {
+        font-size: 1.8rem;
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+}
+
+.c-listpost {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+    margin-bottom: 65px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .c-listpost {
+        width: calc(100% + 4rem);
+        margin-left: -2rem;
+        margin-bottom: 35px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .c-listpost {
+        width: calc(100% + 2rem);
+        margin-left: -1rem;
+        margin-bottom: 35px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .c-listpost {
+        width: calc(100% + 2rem);
+        margin-bottom: 20px;
+    }
+}
+
+.c-listpost .txt {
+    width: 100%;
+    margin-bottom: 52px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+@media only screen and (max-width: 767px) {
+    .c-listpost .txt {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.c-listpost>.ttl {
+    font-size: 2.2rem;
+    line-height: 1.95;
+    display: block;
+    border-bottom: 1px solid #E6E6E6;
+    color: #008FD4;
+    margin-bottom: 36px;
+    width: 100%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding-bottom: 5px;
+}
+
+@media only screen and (max-width: 767px) {
+    .c-listpost>.ttl {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.c-listpost__item {
+    width: 295px;
+    background: #F4F8FA;
+    margin: 0 2rem;
+    position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+    .c-listpost__item {
+        width: calc(33.3% - 4rem);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .c-listpost__item {
+        width: 100%;
+        margin: 0 1rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .c-listpost__item {
+        width: 100%;
+    }
+}
+
+.c-listpost__item .ttl {
+    font-size: 2rem;
+    color: #3C5267;
+    line-height: 1.35;
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    padding: 40px 29px 0 29px;
+}
+
+@media only screen and (max-width: 767px) {
+    .c-listpost__item .ttl {
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+        padding: 30px 15px 0 15px;
+    }
+}
+
+.c-listpost__item .ttl::before {
+    content: "";
+    background: url(../images/common/img_icon03.svg) no-repeat center;
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    left: -5px;
+    top: -5px;
+    position: absolute;
+}
+
+.c-listpost__item .ttl::after {
+    content: "";
+    background: url(../images/common/img_icon03.svg) no-repeat center;
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    right: -5px;
+    top: -5px;
+    position: absolute;
+}
+
+.c-listpost__item p:not(.ttl) {
+    font-size: 1.3rem;
+    line-height: 2;
+    letter-spacing: -0.6px;
+    padding: 0 29px 25px 29px;
+}
+
+@media only screen and (max-width: 767px) {
+    .c-listpost__item p:not(.ttl) {
+        font-size: 1.2rem;
+        padding: 0 15px 25px 15px;
+        text-align: justify;
+        letter-spacing: 0;
+    }
+}
+
+.c-listpost__item::before {
+    content: "";
+    background: url(../images/common/img_icon03.svg) no-repeat center;
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    left: -5px;
+    bottom: -5px;
+    position: absolute;
+}
+
+.c-listpost__item::after {
+    content: "";
+    background: url(../images/common/img_icon03.svg) no-repeat center;
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    right: -5px;
+    bottom: -5px;
+    position: absolute;
+}
+
+.c-listpost__item .c-label {
+    width: 92px;
+    height: 23px;
+    background: #000000;
+    color: #72D1FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    font-family: "Sen", sans-serif;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.c-listpost__item.img {
+    width: 326px;
+    padding: 0;
+}
+
+.c-listpost__item.img img {
+    width: 100%;
+}
+
+.c-listpost__item.img::after,
+.c-listpost__item.img::before {
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .c-listpost--img .c-listpost__item {
+        width: calc(50% - 4rem);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .c-listpost--img .c-listpost__item {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .c-listpost--img .c-listpost__item {
+        width: calc(100% + 2rem);
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .c-listpost--img .c-listpost__item.img {
+        width: 500px;
+        margin-bottom: 4rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .c-listpost--img .c-listpost__item.img {
+        width: calc(100% + 2rem);
+        margin-bottom: 2rem;
+    }
+}
+
 
 /*
 @----- cai nay la cai flex-box
@@ -373,3 +624,43 @@
         max-width: 100%;
     }
 }
+.c-box01 {
+    padding-bottom: 95px;
+    border-bottom: 1px solid #E6E6E6;
+    position: relative;
+  }
+  @media only screen and (max-width: 767px) {
+    .c-box01 {
+      padding-bottom: 50px;
+    }
+  }
+  .c-box01 p:not(.c-ttl01) {
+    width: 800px;
+    margin: 0 auto;
+    line-height: 2.125;
+    font-family: HiraginoSans, sans-serif;
+  }
+  @media only screen and (max-width: 767px) {
+    .c-box01 p:not(.c-ttl01) {
+      width: 100%;
+      line-height: 2;
+    }
+  }
+  .c-box01::after {
+    content: "";
+    background: url(../images/training/img_icon02.svg) no-repeat center;
+    width: 5px;
+    height: 71px;
+    background-size: contain;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -36px;
+    position: absolute;
+  }
+  @media only screen and (max-width: 767px) {
+    .c-box01::after {
+      width: 4px;
+      height: 60px;
+      bottom: -30px;
+    }
+  }
