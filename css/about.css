@@ -289,6 +289,9 @@
     z-index: -1;
 }
 
+.about-lineHead {
+    font-weight: bold;
+}
 .about-line::before {
     height: 2px;
     z-index: 1;
