@@ -1,4 +1,7 @@
 /**************************************component************************************/
+.p-culture {
+  font-family: HiraginoSans, sans-serif;
+}
 .p-culture .container-low {
   width: 1000px;
 }

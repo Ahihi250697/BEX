@@ -625,3 +625,43 @@
         >>>>>>>059e1d722f0806bbad0a0c75d0731108b490e133
     }
 }
+.c-box01 {
+    padding-bottom: 95px;
+    border-bottom: 1px solid #E6E6E6;
+    position: relative;
+  }
+  @media only screen and (max-width: 767px) {
+    .c-box01 {
+      padding-bottom: 50px;
+    }
+  }
+  .c-box01 p:not(.c-ttl01) {
+    width: 800px;
+    margin: 0 auto;
+    line-height: 2.125;
+    font-family: HiraginoSans, sans-serif;
+  }
+  @media only screen and (max-width: 767px) {
+    .c-box01 p:not(.c-ttl01) {
+      width: 100%;
+      line-height: 2;
+    }
+  }
+  .c-box01::after {
+    content: "";
+    background: url(../images/training/img_icon02.svg) no-repeat center;
+    width: 5px;
+    height: 71px;
+    background-size: contain;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -36px;
+    position: absolute;
+  }
+  @media only screen and (max-width: 767px) {
+    .c-box01::after {
+      width: 4px;
+      height: 60px;
+      bottom: -30px;
+    }
+  }
