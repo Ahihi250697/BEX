@@ -16,45 +16,6 @@
     padding: 0 20px;
   }
 }
-.p-training__01 {
-  padding-bottom: 95px;
-  border-bottom: 1px solid #E6E6E6;
-  position: relative;
-}
-@media only screen and (max-width: 767px) {
-  .p-training__01 {
-    padding-bottom: 50px;
-  }
-}
-.p-training__01 p:not(.c-ttl01) {
-  width: 800px;
-  margin: 0 auto;
-  line-height: 2.125;
-}
-@media only screen and (max-width: 767px) {
-  .p-training__01 p:not(.c-ttl01) {
-    width: 100%;
-    line-height: 2;
-  }
-}
-.p-training__01::after {
-  content: "";
-  background: url(../images/training/img_icon02.svg) no-repeat center;
-  width: 5px;
-  height: 71px;
-  background-size: contain;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -36px;
-  position: absolute;
-}
-@media only screen and (max-width: 767px) {
-  .p-training__01::after {
-    width: 4px;
-    height: 60px;
-    bottom: -30px;
-  }
-}
 .p-training__02 {
   padding-top: 83px;
   padding-bottom: 142px;

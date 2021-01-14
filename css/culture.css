@@ -1,4 +1,7 @@
 /**************************************component************************************/
+.p-culture {
+  font-family: HiraginoSans, sans-serif;
+}
 .p-culture .container-low {
   width: 1000px;
 }
@@ -12,6 +15,27 @@
     width: 100%;
     padding: 0 20px;
   }
+}
+.p-culture__02 {
+  padding: 100px 0;
+}
+@media only screen and (max-width: 767px) {
+  .p-culture__02 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+.p-culture__03 {
+  padding: 70px 0 90px 0;
+}
+@media only screen and (max-width: 767px) {
+  .p-culture__03 {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+}
+.p-culture__03 .runed {
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=culture.css.map */
