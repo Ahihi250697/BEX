@@ -51,3 +51,7 @@
 .p-culture__03 .runed {
     margin-bottom: 50px;
 }
+
+.flex-box .wrap-item figure figcaption.text-caption {
+    font-size: 1.6rem;
+}

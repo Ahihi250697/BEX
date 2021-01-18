@@ -129,6 +129,7 @@ _hamburger.on('click', function() {
     // let _check = window.pageYOffset;
     // _check > 0 ? _check = 0 : _check = 1;
     $(this).hasClass('active') ? _remove() : _add();
+    return false;
 });
 
 _mark.on('click', function() {
