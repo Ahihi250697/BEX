@@ -10,7 +10,8 @@ const _wHeight = window.innerHeight;
 
 //-----close all sub menu
 $.each(_subMenu, function() {
-    $(this).slideUp("300");
+    !$(this).parent().hasClass('active') ?
+        $(this).slideUp("300") : null
 });
 
 var _xstart = 0,
@@ -95,7 +96,7 @@ _navLink.on('click', function(event) {
     event.preventDefault();
     let _w = $(this).innerWidth();
     let _ww = $(window).innerWidth();
-    console.log(_ww)
+
     if (event.offsetX < _w - 40 || _ww > 1024) {
         window.location = $(this).attr('href');
 
@@ -129,6 +130,7 @@ _hamburger.on('click', function() {
     // let _check = window.pageYOffset;
     // _check > 0 ? _check = 0 : _check = 1;
     $(this).hasClass('active') ? _remove() : _add();
+    return false;
 });
 
 _mark.on('click', function() {
