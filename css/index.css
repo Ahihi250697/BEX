@@ -1018,6 +1018,9 @@ footer::after {
     .people-bttn {
         top: 30%;
     }
+    .firstView-banner .banner iframe {
+        display: none;
+    }
 }
 
 @media all and (-ms-high-contrast: none),
