@@ -311,6 +311,9 @@
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+.font-bold {
+    font-weight: bold !important;
+}
 
 @media screen and (max-width: 768px) {
     .about-h3 {
