@@ -589,7 +589,8 @@
     max-width: 436px;
 }
 
-.flex-box .wrap-item figure figcaption {
+.flex-box .wrap-item figure figcaption,
+.flex-box .wrap-item figure figcaption p {
     font-size: 1.4rem;
     color: #000;
     margin-top: 1.1rem;
@@ -624,29 +625,34 @@
         max-width: 100%;
     }
 }
+
 .c-box01 {
     padding-bottom: 95px;
     border-bottom: 1px solid #E6E6E6;
     position: relative;
-  }
-  @media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 767px) {
     .c-box01 {
-      padding-bottom: 50px;
+        padding-bottom: 50px;
     }
-  }
-  .c-box01 p:not(.c-ttl01) {
+}
+
+.c-box01 p:not(.c-ttl01) {
     width: 800px;
     margin: 0 auto;
     line-height: 2.125;
     font-family: HiraginoSans, sans-serif;
-  }
-  @media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 767px) {
     .c-box01 p:not(.c-ttl01) {
-      width: 100%;
-      line-height: 2;
+        width: 100%;
+        line-height: 2;
     }
-  }
-  .c-box01::after {
+}
+
+.c-box01::after {
     content: "";
     background: url(../images/training/img_icon02.svg) no-repeat center;
     width: 5px;
@@ -656,11 +662,12 @@
     transform: translateX(-50%);
     bottom: -36px;
     position: absolute;
-  }
-  @media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 767px) {
     .c-box01::after {
-      width: 4px;
-      height: 60px;
-      bottom: -30px;
+        width: 4px;
+        height: 60px;
+        bottom: -30px;
     }
-  }
+}

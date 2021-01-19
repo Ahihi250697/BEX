@@ -429,7 +429,17 @@ main .link-go {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    position: relative;
+    z-index: 0;
 }
+.firstView-banner .banner iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    z-index: 1;
+}
+
 
 .news-content {
     display: -webkit-box;
@@ -1007,6 +1017,9 @@ footer::after {
     }
     .people-bttn {
         top: 30%;
+    }
+    .firstView-banner .banner iframe {
+        display: none;
     }
 }
 
