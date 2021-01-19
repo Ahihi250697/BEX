@@ -54,6 +54,15 @@ function setflexOption(
 
   setflexOption($(".about-list"), true, null, null, 2, 30);
 
+let url = document.URL;
+let id = url.substring(url.lastIndexOf('/') + 1)
+let ele = id + ' img';
+  $(ele).first().on('load', function(){
+    let positionId = $(id).offset().top - 100;
+    window.scrollTo(0, positionId);
+  })
+  
+
   window.addEventListener('resize', function() {
     setflexOption($(".about-list"), true, null, null, 2, 30);
 });
