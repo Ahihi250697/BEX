@@ -21,6 +21,7 @@
   color: #72D1FF;
   background-color: #000;
   width: max-content;
+  display: table;
   font-family: "Sen", sans-serif;
   font-size: 1.4rem;
   padding: 0 10px;
