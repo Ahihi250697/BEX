@@ -1,3 +1,14 @@
+.hero figure img {
+    visibility: hidden;
+}
+
+.hero {
+    background-image: url('../images/greeting/bg_banner.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
 .greeting {
     margin-bottom: 130px;
 }
@@ -150,6 +161,15 @@
 }
 
 @media screen and (max-width: 767px) {
+    .hero figure img {
+        visibility: hidden;
+    }
+    .hero {
+        background-image: url('../images/greeting/img_sp.jpg');
+        background-size: 125%;
+        background-position: 100% 32%;
+        background-repeat: no-repeat;
+    }
     .greeting__introduce {
         padding-top: 60px;
     }
