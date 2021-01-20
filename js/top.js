@@ -6,8 +6,8 @@ $('.people-slider').slick({
     slidesToScroll: 1,
     autoplay: true,
     arrows: true,
-    prevArrow: $('.people-bttn.right button').get(0),
-    nextArrow: $('.people-bttn.left button').get(0),
+    prevArrow: $('.people-bttn.left button').get(0),
+    nextArrow: $('.people-bttn.right button').get(0),
     pauseOnHover: false
   });
 
