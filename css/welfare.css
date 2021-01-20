@@ -1,0 +1,14 @@
+.welfare .p-training__01 {
+  margin-bottom: 115px; }
+.welfare .pick-up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .welfare .pick-up__child {
+    max-width: calc((100% - 116px) / 3);
+    width: 100%;
+    background-color: #F4F8FA;
+    position: relative;
+    z-index: 0; }
+
+/*# sourceMappingURL=welfare.css.map */
