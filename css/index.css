@@ -518,12 +518,16 @@ main .link-go {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    margin: auto -5px;
 }
 
 .about-list {
-    max-width: calc(100%/4 - 15px);
+    /* max-width: calc(100%/4 - 15px); */
+    max-width: 276px;
     width: 100%;
     margin-bottom: 62px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .about-list.none {
@@ -843,13 +847,17 @@ footer::after {
     background-color: white;
 }
 
+.sp-break-special {
+    display: none;
+}
+
 @media screen and (max-width: 1023px) {
     .firstView-container {
         max-width: clamp(1px, 90vw, 100%);
     }
     .about-list {
-        max-width: 100%;
-        width: auto;
+        /* max-width: 100%;
+        width: auto; */
         margin: 0 auto 30px;
         padding: 0 5px;
     }
@@ -859,6 +867,9 @@ footer::after {
 }
 
 @media screen and (max-width: 768px) {
+    .sp-break-special {
+        display: initial;
+    }
     .style-title h3 {
         padding-bottom: 15px;
     }
