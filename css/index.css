@@ -398,17 +398,17 @@ main .link-go {
 
 .firstView-container {
     max-width: calc(100% - 100px);
-    max-height: calc(100vh - 60px);
     width: 100%;
-    min-height: 600px;
-    min-height: clamp(450px, 60vw, 600px);
+    max-height: 600px;
+    height: 56vw;
+    overflow: hidden;
 }
 
 .firstView-container::after {
     content: '';
     display: block;
     width: 100%;
-    padding-bottom: 51.6%;
+    padding-bottom: 5vw;
 }
 
 .firstView-banner {
@@ -434,10 +434,12 @@ main .link-go {
 }
 .firstView-banner .banner iframe {
     position: absolute;
-    top: 0px;
+    top: 50%;
     left: 0px;
-    height: 100%;
+    width: 114vw;
+    height: 80vw;
     z-index: 1;
+    transform: translate(-7vw, -50%);
 }
 
 
