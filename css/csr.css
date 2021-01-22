@@ -26,6 +26,17 @@
       .activities__list__child figure img {
         max-width: 80px;
         margin-right: 10px; }
+    .activities__list__child ul li {
+      font-size: 1.3rem;
+      line-height: 2; }
+      .activities__list__child ul li::before {
+        content: "";
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: #008FD4;
+        border-radius: 50%;
+        margin-right: 5px; }
   .activities__list > figure {
     max-width: calc(50% - 70px);
     width: 100%;

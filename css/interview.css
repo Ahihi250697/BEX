@@ -43,7 +43,7 @@
   right: 0;
 }
 
-.people__list__child figure figcaption a {
+.people__list__child figure figcaption span {
   display: flex;
   background-color: #000;
   font-family: "Sen", sans-serif;
@@ -57,22 +57,25 @@
   transition: all 0.5s ease;
 }
 
-.people__list__child figure figcaption a i.fas {
+.people__list__child figure figcaption span i.fas {
   margin-top: 3px;
   margin-left: 5px;
   transition: all 0.5s ease;
 }
 
-.people__list__child figure figcaption a:hover {
+.people__list__child a{
+  display: block;
+}
+.people__list__child a:hover {
   opacity: 0.8;
 }
 
-.people__list__child figure figcaption a:hover i.fas {
+.people__list__child a:hover figure figcaption span i.fas {
   transform: translateX(5px);
 }
 
 .people__list__child .detail h2 {
-  font-family: HiraginoSans, sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 1.6rem;
   margin: 30px 0 20px;
   font-weight: 400;
@@ -100,7 +103,7 @@
 }
 
 .people__list__child .detail p {
-  font-family: HiraginoSans, sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 1.3rem;
   font-weight: 400;
 }
@@ -191,10 +194,10 @@
 }
 
 .mv__banner__detail h3 {
-  font-family: HiraginoSans, sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 1.8rem;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: bold;
 }
 
 .mv__banner__detail>span {
@@ -206,7 +209,7 @@
 }
 
 .mv__banner__detail p {
-  font-family: HiraginoSans, sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 1.3rem;
 }
 
@@ -247,10 +250,10 @@
 }
 
 .info__block__left h3 {
-  font-family: HiraginoSans, sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 1.8rem;
   line-height: 2;
-  font-weight: 300;
+  font-weight: bold;
 }
 
 .info__block__right {
@@ -259,7 +262,7 @@
 }
 
 .info__block__right p {
-  font-family: HiraginoSans, sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   font-size: 1.4rem;
   line-height: 2;
   margin-bottom: 30px;
@@ -347,7 +350,7 @@
 .info__schedule__content dl dd h3 {
   font-size: 1.8rem;
   line-height: 1.5;
-  font-weight: 300;
+  font-weight: bold;
 }
 
 .info__schedule__content dl dd p {
