@@ -158,3 +158,14 @@ _totop.click(function(e) {
         "swing"
     );
 });
+
+$(window).bind("load resize", function() {
+    $('.c-listpost__item.img').each(function() {
+        var img01 = $(this).find('img').width();
+        var content01 = $(this).width();
+        if (img01 < content01) {
+            $(this).find('img').css('width', '100%');
+            $(this).find('img').css('height', 'auto');
+        }
+    })
+});
