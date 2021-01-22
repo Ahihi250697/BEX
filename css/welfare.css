@@ -44,7 +44,7 @@
       transform: translate(4px, -9px); }
     .welfare .pick-up__child > span {
       position: absolute;
-      z-index: 0;
+      z-index: -1;
       top: 0;
       right: 0;
       bottom: 0;
@@ -135,6 +135,9 @@
           font-size: 2rem;
           color: #008FD4;
           margin-bottom: 20px; }
+        .welfare .line-up__list__child .box-comment__text p {
+          font-size: 1.4rem;
+          letter-spacing: 2px; }
 
 @media screen and (max-width: 1023px) {
   .welfare .pick-up__child {

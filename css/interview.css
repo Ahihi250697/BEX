@@ -111,7 +111,7 @@
 .people__list__child .detail p span {
   font-size: 1.5rem;
   font-weight: 400;
-  margin: 0 10px 0 30px;
+  margin: 0 10px 0 0;
 }
 
 @media screen and (max-width: 1023px) {
@@ -344,7 +344,6 @@
 .info__schedule__content dl dd {
   max-width: calc(50% + 410px);
   width: 100%;
-  font-family: 'HiraginoSans', sans-serif;
 }
 
 .info__schedule__content dl dd h3 {
