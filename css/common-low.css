@@ -612,12 +612,14 @@
     line-height: 2;
     letter-spacing: 0.1rem;
     min-height: 6rem;
+    font-weight: 700;
     display: flex;
     align-items: center;
 }
 
 .flex-box .wrap-item .description {
     margin-top: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.9;
     font-size: 1.4rem;
 }
@@ -656,7 +658,6 @@
     width: 800px;
     margin: 0 auto;
     line-height: 2.125;
-    font-family: HiraginoSans, sans-serif;
 }
 
 @media only screen and (max-width: 767px) {
