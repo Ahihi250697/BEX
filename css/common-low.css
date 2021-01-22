@@ -212,6 +212,7 @@
     .data-list.data-flex {
         display: block;
     }
+
     .data-list.data-flex dt,
     .data-list.data-flex dd {
         margin-top: 1.5rem;
@@ -596,8 +597,17 @@
     max-width: 436px;
 }
 
+.flex-box .wrap-item figure figcaption {
+    font-weight: 700;
+}
+
+.flex-box .wrap-item figure figcaption p {
+    font-weight: 400;
+}
+
 .flex-box .wrap-item figure figcaption,
 .flex-box .wrap-item figure figcaption p {
+
     font-size: 1.4rem;
     color: #000;
     margin-top: 1.1rem;
@@ -617,9 +627,11 @@
     margin-top: 1.2rem;
     font-size: 1.4rem;
     line-height: 1.9;
+    font-size: 1.4rem;
 }
 
 @media screen and (max-width: 1024px) {
+
     .flex-box .wrap-item,
     .flex-box .wrap-item.item--2 {
         max-width: calc(50% - 10px);
@@ -630,6 +642,7 @@
     .flex-box .wrap-item {
         max-width: 100%;
     }
+
     .flex-box .wrap-item.item--2 {
         max-width: 100%;
     }
