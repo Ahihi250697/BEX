@@ -1,269 +1,244 @@
 .icon {
-    position: absolute;
-    display: block;
+  position: absolute;
+  display: block;
 }
-
 .icon.plus {
-    width: 10px;
-    height: 1px;
-    background-color: #000;
+  width: 10px;
+  height: 1px;
+  background-color: #000;
 }
-
 .icon.plus::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    display: block;
-    background-color: #000;
-    transform: rotate(90deg);
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #000;
+  transform: rotate(90deg);
 }
-
 .icon.arrows {
-    width: 1px;
-    height: 6.4rem;
-    background-color: #000;
+  width: 1px;
+  height: 6.4rem;
+  background-color: #000;
 }
-
 .icon.arrows::after {
-    content: "";
-    width: 0;
-    height: 0;
-    display: block;
-    border-top: 7px solid #000;
-    border-right: 2px solid transparent;
-    border-left: 2px solid transparent;
-    border-bottom: 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translate(-2px, 100%);
+  content: "";
+  width: 0;
+  height: 0;
+  display: block;
+  border-top: 7px solid #000;
+  border-right: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-2px, 100%);
 }
 
 .text-desc {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 
 .decoration {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
 }
 
 .technology {
-    width: 100%;
-    border-bottom: 1px solid #E6E6E6;
+  width: 100%;
+  border-bottom: 1px solid #E6E6E6;
 }
-
 .technology .technology__intro {
-    padding-bottom: 13rem;
-    position: relative;
+  padding-bottom: 13rem;
+  position: relative;
 }
-
 .technology .technology__intro .intro__title {
-    color: #008FD4;
-    font-size: 2.3rem;
-    text-align: center;
+  color: #008FD4;
+  font-size: 2.3rem;
+  text-align: center;
+  font-weight: 700;
 }
-
 .technology .technology__intro .icon.arrows {
-    bottom: 0;
-    left: 50%;
-    transform: translate(-1px, 43%);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-1px, 43%);
 }
-
 .technology .intro-box {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 4.6rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4.6rem;
 }
-
 .technology .intro-box p {
-    font-size: 1.6rem;
-    line-height: 2.13;
-    text-align: justify;
-    margin-top: 2.7rem;
+  font-size: 1.6rem;
+  line-height: 2.13;
+  text-align: justify;
+  margin-top: 2.7rem;
 }
-
 .technology .intro-box div,
 .technology .intro-box figure {
-    width: 100%;
-    max-width: 50%;
-    display: block;
+  width: 100%;
+  max-width: 50%;
+  display: block;
 }
-
 .technology .intro-box figure img {
-    max-width: calc(100% - 30px);
-    display: block;
-    margin-left: auto;
+  max-width: calc(100% - 30px);
+  display: block;
+  margin-left: auto;
 }
-
 @media screen and (max-width: 1024px) {
-    .technology .intro-box p {
-        margin: 0;
-    }
-    .technology .intro-box div,
-    .technology .intro-box figure,
-    .technology .intro-box figure img {
-        max-width: 100%;
-    }
-    .technology .intro-box figure {
-        margin-top: 3rem;
-    }
+  .technology .intro-box p {
+    margin: 0;
+  }
+  .technology .intro-box div,
+.technology .intro-box figure,
+.technology .intro-box figure img {
+    max-width: 100%;
+  }
+  .technology .intro-box figure {
+    margin-top: 3rem;
+  }
 }
-
 @media screen and (max-width: 1023px) {
-    .technology .technology__intro {
-        padding-bottom: 8rem;
-    }
-    .technology .technology__intro .intro__title {
-        font-size: 1.8rem;
-    }
-    .technology .intro-box p {
-        font-size: 1.4rem;
-    }
+  .technology .technology__intro {
+    padding-bottom: 8rem;
+  }
+  .technology .technology__intro .intro__title {
+    font-size: 1.8rem;
+  }
+  .technology .intro-box p {
+    font-size: 1.4rem;
+  }
 }
 
 .design {
-    width: 100%;
-    margin-top: 13.5rem;
+  width: 100%;
+  margin-top: 13.5rem;
 }
-
 .design .design-two-button {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
 .design .design-two-button a {
-    width: 49rem;
-    max-width: calc(50% - 10px);
-    height: 7.5rem;
-    color: #fff;
-    background-color: #000;
-    display: flex;
-    flex-direction: column;
-    padding: 1.8rem 2rem;
-    font-size: 1.4rem;
-    line-height: 2;
-    position: relative;
-    transition: all 0.3s ease;
+  width: 49rem;
+  max-width: calc(50% - 10px);
+  height: 7.5rem;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  padding: 1.8rem 2rem;
+  font-size: 1.4rem;
+  line-height: 2;
+  position: relative;
+  transition: all 0.3s ease;
 }
-
 .design .design-two-button a:hover {
-    opacity: 0.75;
+  opacity: 0.75;
 }
-
 .design .design-two-button a::after {
-    content: "";
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-top: 9px solid #72D1FF;
-    border-right: 5px solid transparent;
-    border-left: 5px solid transparent;
-    border-bottom: 0;
-    top: 45%;
-    right: 30px;
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 9px solid #72D1FF;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-bottom: 0;
+  top: 45%;
+  right: 30px;
 }
-
 .design .design-two-button a span {
-    font-family: "Sen", sans-serif;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 0.8;
+  font-family: "Sen", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 0.8;
 }
-
 @media screen and (max-width: 768px) {
-    .design {
-        margin-top: 5rem;
-    }
-    .design .design-two-button a {
-        width: 100%;
-        max-width: 100%;
-        margin-top: 1.5rem;
-    }
+  .design {
+    margin-top: 5rem;
+  }
+  .design .design-two-button a {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 1.5rem;
+  }
 }
 
 .automotive {
-    width: 100%;
-    margin-top: 10.5rem;
+  width: 100%;
+  margin-top: 10.5rem;
 }
-
 .automotive .text-intro {
-    font-size: 1.4rem;
-    margin-top: 5rem;
-    color: #000;
-    line-height: 2;
+  font-size: 1.4rem;
+  margin-top: 5rem;
+  color: #000;
+  line-height: 2;
 }
-
 @media screen and (max-width: 767px) {
-    .automotive {
-        margin-top: 5rem;
-    }
+  .automotive {
+    margin-top: 5rem;
+  }
 }
 
 .system {
-    width: 100%;
-    margin-top: 14rem;
-    margin-bottom: 16rem;
+  width: 100%;
+  margin-top: 14rem;
+  margin-bottom: 16rem;
 }
-
 .system .text-intro {
-    font-size: 1.4rem;
-    margin-top: 5rem;
-    color: #000;
-    line-height: 2;
+  font-size: 1.4rem;
+  margin-top: 5rem;
+  color: #000;
+  line-height: 2;
 }
 
 .project-box {
-    background-color: #F4F8FA;
-    position: relative;
-    padding: 5rem;
-    margin-top: 6rem;
+  background-color: #F4F8FA;
+  position: relative;
+  padding: 5rem;
+  margin-top: 6rem;
 }
-
 .project-box .decoration .icon:nth-child(1) {
-    top: 0;
-    left: 0;
-    transform: translateX(-50%);
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
 }
-
 .project-box .decoration .icon:nth-child(2) {
-    top: 0;
-    right: 0;
-    transform: translateX(50%);
+  top: 0;
+  right: 0;
+  transform: translateX(50%);
 }
-
 .project-box .decoration .icon:nth-child(3) {
-    bottom: 0;
-    left: 0;
-    transform: translateX(-50%);
+  bottom: 0;
+  left: 0;
+  transform: translateX(-50%);
 }
-
 .project-box .decoration .icon:nth-child(4) {
-    bottom: 0;
-    right: 0;
-    transform: translateX(50%);
+  bottom: 0;
+  right: 0;
+  transform: translateX(50%);
 }
-
 .project-box .project-title {
-    font-size: 2rem;
-    color: #3C5267;
-    font-weight: 500;
-    line-height: 1;
+  font-size: 2rem;
+  color: #3C5267;
+  font-weight: 500;
+  line-height: 1;
+}
+@media screen and (max-width: 767px) {
+  .project-box {
+    padding: 4rem 1rem;
+    margin-top: 6rem;
+  }
+  .project-box .project-title {
+    font-size: 1.6rem;
+  }
 }
 
-@media screen and (max-width: 767px) {
-    .project-box {
-        padding: 4rem 1rem;
-        margin-top: 6rem;
-    }
-    .project-box .project-title {
-        font-size: 1.6rem;
-    }
-}
+/*# sourceMappingURL=technology.css.map */
