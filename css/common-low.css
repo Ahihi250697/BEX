@@ -643,7 +643,6 @@
     width: 800px;
     margin: 0 auto;
     line-height: 2.125;
-    font-family: HiraginoSans, sans-serif;
 }
 
 @media only screen and (max-width: 767px) {
