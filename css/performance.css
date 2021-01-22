@@ -75,7 +75,6 @@
 
 .c-ttl02 {
     font-size: 2.4rem;
-    font-family: HiraginoSansW6, sans-serif;
     font-weight: 600;
     padding-left: 18px;
     line-height: 1.5;
@@ -229,7 +228,6 @@
     font-size: 2.6rem;
     line-height: 1.8;
     color: #3C5267;
-    font-family: HiraginoSansW6, sans-serif;
     font-weight: 600;
     text-align: center;
     margin-bottom: 25px;
@@ -408,7 +406,6 @@
     text-align: center;
     justify-content: center;
     width: 317px;
-    font-family: HiraginoSansW6, sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
     line-height: 1.44;
@@ -593,7 +590,6 @@
 .p-performance03__content__top .ttl02 {
     font-size: 2.6rem;
     font-weight: 600;
-    font-family: HiraginoSansW6, sans-serif;
     line-height: 1.5;
     display: block;
     letter-spacing: 2px;
@@ -631,7 +627,6 @@
 
 .p-performance03__content__top .ttl p span {
     font-size: 1.5rem;
-    font-family: HiraginoSansW6, sans-serif;
 }
 
 @media only screen and (max-width: 767px) {
@@ -672,7 +667,6 @@
 
 .p-performance03__content__txt .ttl {
     font-size: 2.2rem;
-    font-family: HiraginoSansW6, sans-serif;
     font-weight: 600;
     color: #3C5267;
     line-height: 1.5;
