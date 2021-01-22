@@ -17,6 +17,9 @@
 .cm-box .cm-item {
     margin-top: 5rem;
 }
+.cm-box .cm-title.mid-title{
+    font-family: 'Noto Sans JP', sans-serif !important;
+}
 
 .data-list {
     margin-top: 9.5rem;
@@ -241,6 +244,9 @@
     letter-spacing: 0.3rem;
     font-weight: 700;
     transition: all 0.3s ease;
+}
+.entry-button.mid-btn a {
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 .entry-button a:hover {
