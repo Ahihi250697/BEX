@@ -391,7 +391,7 @@ body>main {
 }
 
 .hero figure figcaption h2 span {
-    font-family: "Sen", sans-serif;
+    /* font-family: "Sen", sans-serif; */
     font-weight: 700;
     font-size: 5rem;
     letter-spacing: 0;
@@ -414,7 +414,7 @@ body>main {
 }
 
 .cm-title .title {
-    font-family: "Sen", sans-serif;
+    /* font-family: "Sen", sans-serif; */
     font-weight: 700;
     font-size: 3.8rem;
     color: #000;
@@ -547,11 +547,11 @@ body>main {
     text-transform: uppercase;
     display: block;
     font-size: 2rem;
-    font-family: "Sen", sans-serif;
+    /* font-family: "Sen", sans-serif; */
 }
 
 .other-container .other-box .more-button {
-    font-family: "Sen", sans-serif;
+    /* font-family: "Sen", sans-serif; */
     font-size: 1.3rem;
     font-weight: 700;
     color: #fff;
