@@ -115,7 +115,7 @@
 }
 
 .external-link__block h2 {
-    font-family: 'Sen', sans-serif;
+    /* font-family: 'Sen', sans-serif; */
     font-size: 2.8rem;
     font-weight: bold;
     line-height: 1.2;
@@ -128,7 +128,7 @@
 
 .external-link__block h2 span {
     display: block;
-    font-family: 'HiraginoSans', sans-serif;
+    /* font-family: 'HiraginoSans', sans-serif; */
     font-size: 1.6rem;
     font-weight: 300;
 }
@@ -215,7 +215,6 @@
     .data-list.data-flex {
         display: block;
     }
-
     .data-list.data-flex dt,
     .data-list.data-flex dd {
         margin-top: 1.5rem;
@@ -239,7 +238,7 @@
     background-color: #008FD4;
     border: 2px solid #008FD4;
     color: #fff;
-    font-family: "Sen", sans-serif;
+    /* font-family: "Sen", sans-serif; */
     font-size: 2.8rem;
     text-transform: uppercase;
     letter-spacing: 0.3rem;
@@ -292,7 +291,7 @@
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    font-family: 'Sen', sans-serif;
+    /* font-family: 'Sen', sans-serif; */
     font-size: 1.3rem;
     padding: 5px;
     height: clamp(40px, 28%, 76px);
@@ -522,7 +521,7 @@
     align-items: center;
     justify-content: center;
     font-size: 1.4rem;
-    font-family: "Sen", sans-serif;
+    /* font-family: "Sen", sans-serif; */
     position: absolute;
     left: 0;
     top: 0;
@@ -613,7 +612,6 @@
 
 .flex-box .wrap-item figure figcaption,
 .flex-box .wrap-item figure figcaption p {
-
     font-size: 1.4rem;
     color: #000;
     margin-top: 1.1rem;
@@ -637,7 +635,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-
     .flex-box .wrap-item,
     .flex-box .wrap-item.item--2 {
         max-width: calc(50% - 10px);
@@ -648,7 +645,6 @@
     .flex-box .wrap-item {
         max-width: 100%;
     }
-
     .flex-box .wrap-item.item--2 {
         max-width: 100%;
     }
