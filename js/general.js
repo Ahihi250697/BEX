@@ -9,7 +9,7 @@ const _totop = $('.to-top-button');
 const _wHeight = window.innerHeight;
 
 //-----close all sub menu
-$.each(_subMenu, function() {
+$.each(_subMenu, function () {
     !$(this).parent().hasClass('active') ?
         $(this).slideUp("300") : null
 });
@@ -18,7 +18,7 @@ var _xstart = 0,
     _wstart = 0,
     _eqstart = 1;
 
-$(window).on('scroll load resize', function(e) {
+$(window).on('scroll load resize', function (e) {
     let _wW = window.innerWidth;
     let _wY = window.pageYOffset;
 
@@ -30,11 +30,20 @@ $(window).on('scroll load resize', function(e) {
     if (_wW > 1024) {
         _remove();
     }
+    // _setLine();
+
 });
+
+$(window).on('load', function () {
+    setTimeout(function () {
+        _setLine()
+    }, 500);
+    console.log('asdasdsad');
+})
 
 
 function _setLine() {
-    $.each(_menuItem, function() {
+    $.each(_menuItem, function () {
         if ($(this).hasClass('active')) {
             _xstart = $(this).find('.nav-link').position().left;
             _wstart = $(this).find('.nav-link').innerWidth();
@@ -42,41 +51,40 @@ function _setLine() {
             _line.css({
                 width: _wstart,
                 left: _xstart,
-            })
+            });
+            console.log(_wstart);
         }
     })
 }
 
-_setLine();
-
 function _setLineNoneActive() {
-    $.each(_menuItem, function() {
+    $.each(_menuItem, function () {
         $(this).removeClass('active');
     })
 }
 
-_menuItem.on('mouseenter', function() {
-        let _wW = window.innerWidth;
-        if (_wW <= 1024) return;
-        let _x = $(this).find('.nav-link').position().left;
-        let _w = $(this).find('.nav-link').innerWidth();
-        let _timeDuration = (Math.abs(_eqstart - $(this).index()) + 1) * .1 + .1;
-        _line.css({
-            width: _w,
-            left: _x,
-            'transition-duration': _timeDuration + 's'
-        });
-    }).on('mouseout', function() {
-        let _wW = window.innerWidth;
-        if (_wW <= 1024) return;
-        let _x = _xstart;
-        let _w = _wstart;
-        _line.css({
-            width: _w,
-            left: _x,
-        })
+_menuItem.on('mouseenter', function () {
+    let _wW = window.innerWidth;
+    if (_wW <= 1024) return;
+    let _x = $(this).find('.nav-link').position().left;
+    let _w = $(this).find('.nav-link').innerWidth();
+    let _timeDuration = (Math.abs(_eqstart - $(this).index()) + 1) * .1 + .1;
+    _line.css({
+        width: _w,
+        left: _x,
+        'transition-duration': _timeDuration + 's'
+    });
+}).on('mouseout', function () {
+    let _wW = window.innerWidth;
+    if (_wW <= 1024) return;
+    let _x = _xstart;
+    let _w = _wstart;
+    _line.css({
+        width: _w,
+        left: _x,
     })
-    // .on('click', function() {
+})
+// .on('click', function() {
 
 
 
@@ -92,7 +100,7 @@ _menuItem.on('mouseenter', function() {
 //     }
 // })
 
-_navLink.on('click', function(event) {
+_navLink.on('click', function (event) {
     event.preventDefault();
     let _w = $(this).innerWidth();
     let _ww = $(window).innerWidth();
@@ -126,14 +134,14 @@ _navLink.on('click', function(event) {
     // }
 });
 
-_hamburger.on('click', function() {
+_hamburger.on('click', function () {
     // let _check = window.pageYOffset;
     // _check > 0 ? _check = 0 : _check = 1;
     $(this).hasClass('active') ? _remove() : _add();
     return false;
 });
 
-_mark.on('click', function() {
+_mark.on('click', function () {
     _hamburger.hasClass('active') ? _remove() : _add();
 })
 
@@ -149,7 +157,7 @@ function _add() {
     _mark.addClass('active');
 }
 
-_totop.click(function(e) {
+_totop.click(function (e) {
     e.preventDefault();
     $("html,body").animate({
             scrollTop: 0,
@@ -159,8 +167,8 @@ _totop.click(function(e) {
     );
 });
 
-$(window).bind("load resize", function() {
-    $('.c-listpost__item.img').each(function() {
+$(window).bind("load resize", function () {
+    $('.c-listpost__item.img').each(function () {
         var img01 = $(this).find('img').width();
         var content01 = $(this).width();
         if (img01 < content01) {
