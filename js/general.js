@@ -37,7 +37,7 @@ $(window).on('scroll load resize', function (e) {
 $(window).on('load', function () {
     setTimeout(function () {
         _setLine()
-    }, 500);
+    }, 1000);
     console.log('asdasdsad');
 })
 
@@ -85,9 +85,6 @@ _menuItem.on('mouseenter', function () {
     })
 })
 // .on('click', function() {
-
-
-
 //     if (!$(this).hasClass('active')) {
 //         $(this).addClass('active');
 //         $(this).find('.sub-menu').stop().slideDown("300");
